@@ -1,0 +1,55 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.9
+Date: 02.08.2022
+  Changes:
+    - tin and gas
+---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+Date: 12.03.2022
+  Changes:
+    - Aluminium
+---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+Date: 22.01.2022
+  Changes:
+    - Alien artifact from matter need stabilizer
+    - Alien ore 2 yield less science, to stay true to the original mod ratios
+    - Some new alien ore 1 recipes with penalty
+    - alien research data is now done in bioprocessing
+---------------------------------------------------------------------------------------------------
+Version: 0.1.6
+Date: 12.01.2022
+  Changes:
+    - kr-matter-alien-processing alien-technology prerequisites + 1 alien tech card
+---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 09.01.2022
+  Changes:
+    - Unlock matter to alien ore (forgot it)
+---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+Date: 09.01.2022
+  Changes:
+    - found the matter function from k2 :P
+    - Rebalanced alien 2 and 3 alien research data cost to be more aligned with original cost
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 08.01.2022
+  Changes:
+    - stacking support
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 07.01.2022
+  Changes:
+    - Matter teck
+    - alien teck cards
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 06.01.2022
+  Changes:
+    - K2 should be optional
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 06.01.2022
+  Changes:
+    - Initial Release

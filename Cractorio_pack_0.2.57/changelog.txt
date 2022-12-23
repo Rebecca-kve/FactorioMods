@@ -1,0 +1,126 @@
+Version: 0.2.56
+Date: 2022-01-22
+  Changes:
+    - Moves basic assembling one tech down.
+    - Remove alien tech from Bioprocessing
+    - Cermet fix moved to final fixes
+---------------------------------------------------------------------------------------------------
+Version: 0.2.55
+Date: 2022-01-21
+  Balancing:
+    - Solar and energy storage new value 600
+    - antimatter-locomotive recipe need a fusion-locomotive instead of nuclear-locomotive
+    - Tweaks to robotworld defoult settings, robobort cost more power and charge faster
+    - Rampant Arsenal defoult settings to fit with K2
+---------------------------------------------------------------------------------------------------
+Version: 0.2.54
+Date: 2022-01-19
+  Changes
+    - Aircraft grid fixed
+    - Added settings for armored biters and bobs enemy
+---------------------------------------------------------------------------------------------------
+Version: 0.2.53
+Date: 2022-01-19
+  Balancing:
+    - Solar and energy storage recipe changed when buff is used
+    - Buffed Enargy storage to 800MJ
+    - SF advanced solar default 600
+  Changes
+    - Aircraft grid options: Aircraft Balanced or Krastorio2
+    - Zirconium Cermet update
+---------------------------------------------------------------------------------------------------
+Version: 0.2.52
+Date: 2022-01-15
+  Balancing:
+    - Condensation recipes and Electrolysis recipes to advanced chemical plant off by defoult
+  Changes
+    - Advanced steam turbine recipe uses steam-turbine-3 if bobmods power steam is used
+---------------------------------------------------------------------------------------------------
+Version: 0.2.50
+Date: 2022-01-14
+  Balancing:
+    - Add nuclear, fusion and antimatter wagons if the k2 more locomotives mod is used (6 more wagons)
+    - fluid-compression-rate defoult from 10 to 5 to balance new wagons.
+  Changes
+    - Required dependancys removed. While the tweaks in this mod is meant for the cractorio pack, it can now be used by anyone.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.4
+Date: 2022-01-13
+  Balancing:
+    - Bob solar an accumulator removed from defoult setting
+    - Flying fortress get a railgun
+  Changes
+    - k2 more locomotives require unlocking of previous tier
+    - Integrated bobpowerk2fix Allow to use bobsettings
+    - Option to enable/disable k2 advanced solar and power storage buff
+---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+Date: 2022-01-12
+  Balancing:
+    - Added alien tech to unlock helicopter
+  Changes
+    - Some mods moved to full pack
+    - Check user settings for other mods in code
+    - Added option to turn settings off
+---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: 2022-01-11
+  Balancing:
+    - Krastorio 2 Additional Locomotives rebalanced to be more worth it.
+    - Centrifuge module count nerf, each tier add +1 slot not 2
+    - Aircraft grid buff (As k2 nerf this to much) flying fortress need alien tech now
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 2022-01-11
+  Changes:
+    - Kr-Advanced chemical plant recipie update
+    - if bzzirconium is on cermet affect automation-5 not automation-3 uses bzzirconium-recipe-bypass
+    - Defoult settings changed: advance efficiency module no speed buff, helicopter-tech on, legacy background
+    - Clean up prerequisites in tech tree, add alien tech to bob reactors 2
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2022-01-10
+  Changes:
+    - Default settings changed
+    - Add alien-technology prerequisites
+---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+Date: 09.01.2022
+  Compatibility:
+    - SE compat
+    - Atlas_BobK2PowerFix
+    - bobpower
+    - wret-beacon-rebalance-mod
+    - Krastorio2_Modules_Updated
+    - Load-Furn-2 (Use Industrial furn)
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 07.01.2022
+  Changes:
+    - If SchallAlienLoot many technology now uses alien scieence.
+  Alien science:
+    - K2 advanced weapon and equipment
+    - bob purple tier entityes.
+    - K2 OP power entityes
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 06.01.2022
+  Changes:
+    - Optional schall alien loot K2 BZ
+    - Optional dependancy Zirconium (fixed recipies, cermet not in low teck recipies)
+    - Many mods changed to optional
+    - Krastorio2_BioLabModules dependancy removed (k2 added 3slots)
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 01.01.2022
+  Changes:
+    - Changed to optional: Barreling-group
+    - Removed requirement: Railloader, informatron
+    - Added bzcarbon
+    - Recipies adjustment
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 22.12.2021
+  Changes:
+    - Initial Release
+---------------------------------------------------------------------------------------------------

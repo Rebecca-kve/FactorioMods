@@ -81,7 +81,7 @@ data:extend({
     prerequisites = {"braking-force-7"},
     unit =
     {
-    count_formula = "1.5^(L-7)*800",
+    count_formula = "1.5^(L-8)*800",
     ingredients = production_complexity_6,
       time = 60
     },
@@ -162,7 +162,7 @@ data:extend({
     prerequisites = {"weapon-shooting-speed-6"},
     unit =
     {
-      count_formula = "2^(L-6)*1000",
+      count_formula = "2^(L-7)*1000",
       ingredients = military_complexity_6,
       time = 60
     },
@@ -195,7 +195,7 @@ data:extend({
             prerequisites = {"inserter-capacity-bonus-7"},
             unit =
             {
-                count_formula = "2^(L-7)*1000",
+                count_formula = "2^(L-8)*1000",
                 ingredients = production_complexity_6,
                 time = 60
             },
@@ -465,7 +465,7 @@ data:extend({
     prerequisites = {"laboratory-productivity-1"},
     unit =
     {
-      count_formula = "L*L*50",
+      count_formula = "L*L*100",
       ingredients = production_complexity_3,
       time = 60
     },
@@ -488,7 +488,7 @@ data:extend({
     prerequisites = {"laboratory-productivity-2"},
     unit =
     {
-      count_formula = "L*L*50",
+      count_formula = "L*L*100",
       ingredients = production_complexity_4,
       time = 60
     },
@@ -511,7 +511,7 @@ data:extend({
     prerequisites = {"laboratory-productivity-3"},
     unit =
     {
-	  count_formula = "L*L*50",
+	  count_formula = "L*L*100",
       ingredients = production_complexity_5,
       time = 60
     },
@@ -534,7 +534,7 @@ data:extend({
     prerequisites = {"laboratory-productivity-4"},
     unit =
     {
-      count_formula = "2^(L-5)*1500",
+      count_formula = "2^(L-5)*3000",
       ingredients = production_complexity_6,
       time = 60
     },

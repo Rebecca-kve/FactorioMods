@@ -19,7 +19,7 @@ if mods['Krastorio2'] then
       prerequisites = {"braking-force-10", "kr-advanced-tech-card"},
       unit =
       {
-      count_formula = "1.5^(L-7)*800",
+      count_formula = "1.5^(L-8)*800",
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -49,7 +49,7 @@ if mods['Krastorio2'] then
       prerequisites = {"braking-force-15", "kr-singularity-tech-card"},
       unit =
       {
-      count_formula = "1.5^(L-7)*800",
+      count_formula = "1.5^(L-8)*800",
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -182,7 +182,7 @@ data:extend({
     prerequisites = {"weapon-shooting-speed-10", "kr-advanced-tech-card"},
     unit =
     {
-      count_formula = "2^(L-6)*1000",
+      count_formula = "2^(L-7)*1000",
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -234,7 +234,7 @@ data:extend({
     prerequisites = {"weapon-shooting-speed-15", "kr-singularity-tech-card"},
     unit =
     {
-      count_formula = "2^(L-6)*1000",
+      count_formula = "2^(L-7)*1000",
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -277,7 +277,7 @@ data:extend({
             prerequisites = {"inserter-capacity-bonus-10", "kr-advanced-tech-card"},
             unit =
             {
-                count_formula = "2^(L-7)*1000",
+                count_formula = "2^(L-8)*1000",
                 ingredients = {
 					{ "production-science-pack", 1 },
 					{ "utility-science-pack", 1 },
@@ -310,7 +310,7 @@ data:extend({
             prerequisites = {"inserter-capacity-bonus-15", "kr-singularity-tech-card"},
             unit =
             {
-                count_formula = "2^(L-7)*1000",
+                count_formula = "2^(L-8)*1000",
                 ingredients = {
 					{ "production-science-pack", 1 },
 					{ "utility-science-pack", 1 },
@@ -560,7 +560,7 @@ data:extend({
     prerequisites = {"laboratory-productivity-7", "kr-advanced-tech-card"},
     unit =
     {
-      count_formula = "2^(L-5)*1500",
+      count_formula = "2^(L-5)*3000",
       ingredients = {
 			{ "production-science-pack", 1 },
 			{ "utility-science-pack", 1 },
@@ -590,7 +590,7 @@ data:extend({
     prerequisites = {"laboratory-productivity-10", "kr-singularity-tech-card"},
     unit =
     {
-      count_formula = "2^(L-5)*1500",
+      count_formula = "2^(L-5)*3000",
       ingredients = {
 			{ "production-science-pack", 1 },
 			{ "utility-science-pack", 1 },

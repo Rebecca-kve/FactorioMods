@@ -2,11 +2,11 @@
 Version: 0.2.0
 Date: 01.02.2023
   Features:
-    - Option to enable disable each research
+    - Options to enable or disable each research
     - Rebalanced cost or buffs
     - K2 compatability
     - Thumbnail
-    - weapon and laser speed one research
+    - weapon and laser speed merged
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 08.01.2022
@@ -33,7 +33,6 @@ Version: 0.0.2
 Date: 16.6.2020
   Features:
     - Robot storage time from 30 to 60
-   
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 16.6.2020

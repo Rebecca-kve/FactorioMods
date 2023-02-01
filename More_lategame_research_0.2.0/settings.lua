@@ -33,7 +33,7 @@ data:extend({
 		type = "bool-setting",
 		name = "weapon-shooting-speed",
 		setting_type = "startup",
-		default_value = true,
+		default_value = false,
 	},
 	{
 		type = "bool-setting",

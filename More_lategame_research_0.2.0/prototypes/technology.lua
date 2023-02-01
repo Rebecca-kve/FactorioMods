@@ -314,7 +314,7 @@ data:extend({
     {
       {
         type = "follower-robot-lifetime",
-        modifier = 0.1
+        modifier = 0.3
       }
     },
     prerequisites = {"defender"},
@@ -336,7 +336,7 @@ data:extend({
     {
       {
         type = "follower-robot-lifetime",
-        modifier = 0.1
+        modifier = 0.2
       }
     },
     prerequisites = {"follower-robot-lifetime-1"},

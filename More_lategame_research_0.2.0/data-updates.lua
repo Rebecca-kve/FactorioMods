@@ -49,7 +49,7 @@ if mods['Krastorio2'] then
       prerequisites = {"braking-force-15", "kr-singularity-tech-card"},
       unit =
       {
-      count_formula = "1.8^(L-7)*800",
+      count_formula = "1.5^(L-7)*800",
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -91,7 +91,7 @@ data:extend({
     },
     unit =
     {
-      count_formula = "2^(L-4)*800",
+      count_formula = "1.8^(L-4)*800",
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },
@@ -121,7 +121,7 @@ data:extend({
     },
     unit =
     {
-      count_formula = "2^(L-4)*800",
+      count_formula = "1.8^(L-4)*800",
       ingredients = {
         { "production-science-pack", 1 },
         { "utility-science-pack", 1 },

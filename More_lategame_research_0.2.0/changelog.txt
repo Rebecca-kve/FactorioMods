@@ -1,0 +1,41 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 01.02.2023
+  Features:
+    - Option to enable disable each research
+    - Rebalanced cost or buffs
+    - K2 compatability
+    - Thumbnail
+    - weapon and laser speed one research
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 08.01.2022
+  Features:
+    - Correct image
+---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 16.6.2020
+  Features:
+    - Changed some description to display actual numbers.
+    - Follower lifetime from 2% to +10% lifetime per level
+    - Laberatory speed from +10% to +5 % per level.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 16.6.2020
+  Features:
+    - Early stages of Lab Productivity and follower lifetime is available to be researched in the early/mid game.
+    - Infinite Inserter capacity adjusted to give normal inserter a small bonus to.
+    - Lab prodoctivity adjusted to be a bit more expensive
+    - Smother transition from vanilla cost to this mod cost.
+   
+---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+Date: 16.6.2020
+  Features:
+    - Robot storage time from 30 to 60
+   
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 16.6.2020
+  Features:
+    - initial release

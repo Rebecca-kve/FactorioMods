@@ -111,7 +111,7 @@ data:extend({
     },
     unit =
     {
-      count_formula = "1.5^(L-4)*800",
+      count_formula = "1.8^(L-4)*800",
       ingredients = production_complexity_6,
       time = 60
     },
@@ -195,7 +195,7 @@ data:extend({
             prerequisites = {"inserter-capacity-bonus-7"},
             unit =
             {
-                count_formula = "1.5^(L-8)*1000",
+                count_formula = "2^(L-7)*1000",
                 ingredients = production_complexity_6,
                 time = 60
             },

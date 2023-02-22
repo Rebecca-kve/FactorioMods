@@ -50,7 +50,9 @@ small_burner_assembling_machine.energy_source = {
   }
 }
 
-burner_assembling_machine.animation.layers[1] = {
+small_burner_assembling_machine.animation = {
+layers = {
+ {
   filename = "__aai-industry__/graphics/entity/burner-assembling-machine/burner-assembling-machine.png",
   priority="high",
   width = 107,
@@ -69,8 +71,34 @@ burner_assembling_machine.animation.layers[1] = {
     shift = util.by_pixel(0, 2 * 2 / 3),
     scale = 1 / 3
   }
+  },
+	{
+	  filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png",
+	  priority="high",
+	  width = 95,
+	  height = 83,
+	  frame_count = 1,
+	  line_length = 1,
+	  repeat_count = 32,
+	  draw_as_shadow = true,
+	  shift = util.by_pixel(8.5 * 2 / 3, 5.5 * 2 / 3),
+	  scale = 2/3,
+	  hr_version = {
+		filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1-shadow.png",
+		priority="high",
+		width = 190,
+		height = 165,
+		frame_count = 1,
+		line_length = 1,
+		repeat_count = 32,
+		draw_as_shadow = true,
+		shift = util.by_pixel(8.5 * 2 / 3, 5 * 2 / 3),
+		scale = 1/3
+	  }
+   }
+ }
 }
-burner_assembling_machine.working_visualisations =
+small_burner_assembling_machine.working_visualisations =
 {
   {
     draw_as_glow = true,
@@ -83,7 +111,7 @@ burner_assembling_machine.working_visualisations =
       height = 226/2,
       frame_count = 1,
       animation_speed = 1,
-      shift = util.by_pixel(8.5 * 2 / 3, 5.5 * 2 / 3),
+      shift = util.by_pixel(0* 2 / 3, 2 * 2 / 3),
       draw_as_glow = true,
       blend_mode = "additive",
 	  scale = 2 / 3,
@@ -94,17 +122,16 @@ burner_assembling_machine.working_visualisations =
         height = 226,
         frame_count = 1,
         animation_speed = 1,
-        shift = util.by_pixel(8.5 * 2 / 3, 5.5 * 2 / 3),
-        scale = 0.5,
+        shift = util.by_pixel(0* 2 / 3, 2 * 2 / 3),
         draw_as_glow = true,
         blend_mode = "additive",
 		scale = 1 / 3,
       }
-    }
+    },
   }
 }
 
-data:extend({small-burner-assembling-machine})
+data:extend({small_burner_assembling_machine, small_burner_assembling_machine_item})
 
 data:extend({
 	{

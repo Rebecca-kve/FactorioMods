@@ -1,0 +1,12 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 2023-02-22
+  Changes:
+    - Crafting speed modifier
+    - Small burner for AAI/SE
+    - Fix shadow
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 2022-08-02
+  Changes:
+    - Mining small machines gives correct item

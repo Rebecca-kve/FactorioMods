@@ -45,7 +45,7 @@ local small_assembling_machine_1 = util.table.deepcopy(data.raw["assembling-mach
 small_assembling_machine_1.name = "small-assembling-machine-1"
 small_assembling_machine_1.minable.result = "small-assembling-machine-1"
 small_assembling_machine_1.ingredient_count = 1
-small_assembling_machine_1.crafting_speed = 0.5
+small_assembling_machine_1.crafting_speed = 0.5 * small-assembling-speed
 --small_assembling_machine_1.module_specification = { module_slots = 2}
 --small_assembling_machine_1.allowed_effects = {"consumption", "speed", "productivity", "pollution"}
 small_assembling_machine_1.collision_box = {{-0.7, -0.7}, {0.7, 0.7}}
@@ -62,7 +62,7 @@ small_assembling_machine_1.animation = {
 			height = 114,
 			frame_count = 32,
 			line_length = 8,
-			shift = util.by_pixel(0, 2),
+			shift = util.by_pixel(0, 2 * 2 / 3),
 			scale = 2/3,
 			hr_version = {
 				filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1.png",
@@ -71,7 +71,7 @@ small_assembling_machine_1.animation = {
 				height = 226,
 				frame_count = 32,
 				line_length = 8,
-				shift = util.by_pixel(0, 2),
+				shift = util.by_pixel(0, 2 * 2 / 3),
 				scale = 1/3,
 			}
         },
@@ -84,7 +84,7 @@ small_assembling_machine_1.animation = {
 			line_length = 1,
 			repeat_count = 32,
 			draw_as_shadow = true,
-			shift = util.by_pixel(8.5, 5.5),
+			shift = util.by_pixel(8.5 * 2 / 3, 5.5 * 2 / 3),
 			scale = 2/3,
 			hr_version = {
 				filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1-shadow.png",
@@ -95,7 +95,7 @@ small_assembling_machine_1.animation = {
 				line_length = 1,
 				repeat_count = 32,
 				draw_as_shadow = true,
-				shift = util.by_pixel(8.5, 5),
+				shift = util.by_pixel(8.5 * 2 / 3, 5 * 2 / 3),
 				scale = 1/3
 			}
 		}
@@ -106,7 +106,7 @@ local small_assembling_machine_2 = util.table.deepcopy(data.raw["assembling-mach
 small_assembling_machine_2.name = "small-assembling-machine-2"
 small_assembling_machine_2.minable.result = "small-assembling-machine-2"
 small_assembling_machine_2.ingredient_count = 1
-small_assembling_machine_2.crafting_speed = 0.75
+small_assembling_machine_2.crafting_speed = 0.75 *small-assembling-speed
 small_assembling_machine_2.module_specification = { module_slots = 2}
 small_assembling_machine_2.allowed_effects = {"consumption", "speed", "productivity", "pollution"}
 small_assembling_machine_2.collision_box = {{-0.7, -0.7}, {0.7, 0.7}}
@@ -125,7 +125,7 @@ small_assembling_machine_2.animation = {
 			height = 110,
 			frame_count = 32,
 			line_length = 8,
-			shift = util.by_pixel(0, 4),
+			shift = util.by_pixel(0, 4 * 2 / 3),
 			scale = 2/3,
 			hr_version = {
 				filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2.png",
@@ -134,7 +134,7 @@ small_assembling_machine_2.animation = {
 				height = 218,
 				frame_count = 32,
 				line_length = 8,
-				shift = util.by_pixel(0, 4),
+				shift = util.by_pixel(0, 4 * 2 / 3),
 				scale = 1/3,
 			}
         },
@@ -146,7 +146,7 @@ small_assembling_machine_2.animation = {
 			frame_count = 32,
 			line_length = 8,
 			draw_as_shadow = true,
-			shift = util.by_pixel(12, 5),
+			shift = util.by_pixel(12 * 2 / 3, 5 * 2 / 3),
 			scale = 2/3,
 			hr_version = {
 				filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-shadow.png",
@@ -156,7 +156,7 @@ small_assembling_machine_2.animation = {
 				frame_count = 32,
 				line_length = 8,
 				draw_as_shadow = true,
-				shift = util.by_pixel(12, 4.75),
+				shift = util.by_pixel(12 * 2 / 3, 4.75 * 2 / 3),
 				scale = 1/3
 			}
 		}
@@ -167,7 +167,7 @@ local small_assembling_machine_3 = util.table.deepcopy(data.raw["assembling-mach
 small_assembling_machine_3.name = "small-assembling-machine-3"
 small_assembling_machine_3.minable.result = "small-assembling-machine-3"
 small_assembling_machine_3.ingredient_count = 1
-small_assembling_machine_3.crafting_speed = 1.25
+small_assembling_machine_3.crafting_speed = 1.25 *small-assembling-speed
 small_assembling_machine_3.module_specification = { module_slots = 4}
 small_assembling_machine_3.allowed_effects = {"consumption", "speed", "productivity", "pollution"}
 small_assembling_machine_3.collision_box = {{-0.7, -0.7}, {0.7, 0.7}}
@@ -185,7 +185,7 @@ small_assembling_machine_3.animation = {
 			height = 119,
 			frame_count = 32,
 			line_length = 8,
-			shift = util.by_pixel(0, -0.5),
+			shift = util.by_pixel(0 * 2 / 3, -0.5 * 2 / 3),
 			scale = 2/3,
 			hr_version = {
 				filename = "__base__/graphics/entity/assembling-machine-3/hr-assembling-machine-3.png",
@@ -194,7 +194,7 @@ small_assembling_machine_3.animation = {
 				height = 237,
 				frame_count = 32,
 				line_length = 8,
-				shift = util.by_pixel(0, -0.75),
+				shift = util.by_pixel(0 * 2 / 3, -0.75 * 2 / 3),
 				scale = 1/3,
 			}
         },
@@ -206,7 +206,7 @@ small_assembling_machine_3.animation = {
 			frame_count = 32,
 			line_length = 8,
 			draw_as_shadow = true,
-			shift = util.by_pixel(28, 4),
+			shift = util.by_pixel(28 * 2 / 3, 4 * 2 / 3),
 			scale = 2/3,
 			hr_version = {
 				filename = "__base__/graphics/entity/assembling-machine-3/hr-assembling-machine-3-shadow.png",
@@ -216,7 +216,7 @@ small_assembling_machine_3.animation = {
 				frame_count = 32,
 				line_length = 8,
 				draw_as_shadow = true,
-				shift = util.by_pixel(28, 4),
+				shift = util.by_pixel(28 * 2 / 3, 4 * 2 / 3),
 				scale = 1/3
 			}
 		}

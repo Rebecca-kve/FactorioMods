@@ -232,7 +232,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "small-assembling-machine-1",
-		enabled = true,
+		enabled = false,
 		normal = {
 			energy_required = 0.5,
 			ingredients = {

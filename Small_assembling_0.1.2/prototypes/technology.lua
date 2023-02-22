@@ -18,5 +18,6 @@ function add_unlock(technology_name, recipe)
   add_effect(technology_name, {type="unlock-recipe", recipe=recipe})
 end
 
+add_unlock("automation", "small-assembling-machine-1" )
 add_unlock("automation-2", "small-assembling-machine-2" )
 add_unlock("automation-3", "small-assembling-machine-3" )

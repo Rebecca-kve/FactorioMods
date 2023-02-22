@@ -137,8 +137,8 @@ data:extend({
 	{
 		type = "recipe",
 		name = "small-burner-assembling-machine",
-		enabled = true,
 		normal = {
+			enabled = true,
 			energy_required = 0.5,
 			ingredients = {
 				{type="item", name="iron-plate", amount=5},
@@ -148,6 +148,7 @@ data:extend({
 			results= { {type="item", name="small-burner-assembling-machine", amount=1} }
 		},
 		expensive = {
+			enabled = true,
 			energy_required = 0.5,
 			ingredients = {
 				{type="item", name="iron-plate", amount=10},

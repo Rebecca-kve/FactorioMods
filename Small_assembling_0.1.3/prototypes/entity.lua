@@ -232,8 +232,8 @@ data:extend({
 	{
 		type = "recipe",
 		name = "small-assembling-machine-1",
-		enabled = false,
 		normal = {
+			enabled = false,
 			energy_required = 0.5,
 			ingredients = {
 				{"iron-gear-wheel", 5},
@@ -243,6 +243,7 @@ data:extend({
 			results= { {type="item", name="small-assembling-machine-1", amount=1} }
 		},
 		expensive = {
+			enabled = false,
 			energy_required = 0.5,
 			ingredients = {
 				{"iron-gear-wheel", 10},
@@ -255,10 +256,8 @@ data:extend({
 	{
 		type = "recipe",
 		name = "small-assembling-machine-2",
-        energy_required = 0.5,
-		enabled = false,
-	
 		normal = {
+			enabled = false,
 			energy_required = 0.5,
 			ingredients = {
 				{"steel-plate", 2},
@@ -268,7 +267,7 @@ data:extend({
 			results= { {type="item", name="small-assembling-machine-2", amount=1} }
 		},
 		expensive = {
-			energy_required = 0.5,
+			enabled = false,
 			ingredients = {
 				{"steel-plate", 4},
 				{"electronic-circuit", 6},
@@ -281,17 +280,10 @@ data:extend({
 	{
 		type = "recipe",
 		name = "small-assembling-machine-3",
-        energy_required = 0.5,
-		enabled = false,
+ 
 		category = "crafting-with-fluid",
-        ingredients = {
-			{type = "fluid", name = "lubricant", amount = 100},
-			{"advanced-circuit", 10},
-			{"small-assembling-machine-2", 1},
-        },
-		result = "small-assembling-machine-3",
-		
 		normal = {
+			enabled = false,
 			energy_required = 0.5,
 			ingredients = {
 				{type = "fluid", name = "lubricant", amount = 100},
@@ -301,6 +293,7 @@ data:extend({
 			results= { {type="item", name="small-assembling-machine-3", amount=1} }
 		},
 		expensive = {
+			enabled = false,
 			energy_required = 0.5,
 			ingredients = {
 				{type = "fluid", name = "lubricant", amount = 200},

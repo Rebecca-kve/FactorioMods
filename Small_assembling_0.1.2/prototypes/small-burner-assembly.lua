@@ -108,14 +108,26 @@ data:extend({
 	{
 		type = "recipe",
 		name = "small-burner-assembling-machine",
-        energy_required = 0.5,
 		enabled = true,
-        ingredients = {
-			{"iron-gear-wheel", 3},
-			{"iron-plate", 5},
-        },
-		result = "small-burner-assembling-machine",
-    },
+		normal = {
+			energy_required = 0.5,
+			ingredients = {
+				{type="item", name="iron-plate", amount=5},
+				{type="item", name="stone-brick", amount=2},
+				{type="item", name="motor", amount=1}
+			},
+			results= { {type="item", name="small-burner-assembling-machine", amount=1} }
+		},
+		expensive = {
+			energy_required = 0.5,
+			ingredients = {
+				{type="item", name="iron-plate", amount=10},
+				{type="item", name="stone-brick", amount=10},
+				{type="item", name="motor", amount=2},
+			},
+			results= { {type="item", name="small-burner-assembling-machine", amount=1} }
+		}
+	}
 })
 
 

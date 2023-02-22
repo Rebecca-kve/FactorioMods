@@ -231,26 +231,51 @@ data:extend({
 	{
 		type = "recipe",
 		name = "small-assembling-machine-1",
-        energy_required = 0.5,
 		enabled = true,
-        ingredients = {
-			{"iron-gear-wheel", 5},
-			{"copper-cable", 10},
-			{"iron-plate", 9},
-        },
-		result = "small-assembling-machine-1",
+		normal = {
+			energy_required = 0.5,
+			ingredients = {
+				{"iron-gear-wheel", 5},
+				{"copper-cable", 10},
+				{"iron-plate", 9},
+			},
+			results= { {type="item", name="small-assembling-machine-1", amount=1} }
+		},
+		expensive = {
+			energy_required = 0.5,
+			ingredients = {
+				{"iron-gear-wheel", 10},
+				{"copper-cable", 20},
+				{"iron-plate", 18},
+			},
+			results= { {type="item", name="small-assembling-machine-1", amount=1} }
+		}
     },
 	{
 		type = "recipe",
 		name = "small-assembling-machine-2",
         energy_required = 0.5,
 		enabled = false,
-        ingredients = {
-			{"steel-plate", 2},
-			{"electronic-circuit", 3},
-			{"small-assembling-machine-1", 1},
-        },
-		result = "small-assembling-machine-2",
+	
+		normal = {
+			energy_required = 0.5,
+			ingredients = {
+				{"steel-plate", 2},
+				{"electronic-circuit", 3},
+				{"small-assembling-machine-1", 1},
+			},
+			results= { {type="item", name="small-assembling-machine-2", amount=1} }
+		},
+		expensive = {
+			energy_required = 0.5,
+			ingredients = {
+				{"steel-plate", 4},
+				{"electronic-circuit", 6},
+				{"small-assembling-machine-1", 1},
+			},
+			results= { {type="item", name="small-assembling-machine-2", amount=1} }
+		}
+		
     },
 	{
 		type = "recipe",
@@ -264,6 +289,25 @@ data:extend({
 			{"small-assembling-machine-2", 1},
         },
 		result = "small-assembling-machine-3",
+		
+		normal = {
+			energy_required = 0.5,
+			ingredients = {
+				{type = "fluid", name = "lubricant", amount = 100},
+				{"advanced-circuit", 10},
+				{"small-assembling-machine-2", 1},
+			},
+			results= { {type="item", name="small-assembling-machine-3", amount=1} }
+		},
+		expensive = {
+			energy_required = 0.5,
+			ingredients = {
+				{type = "fluid", name = "lubricant", amount = 200},
+				{"advanced-circuit", 20},
+				{"small-assembling-machine-2", 1},
+			},
+			results= { {type="item", name="small-assembling-machine-3", amount=1} }
+		}
     },
 })
 

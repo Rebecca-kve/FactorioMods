@@ -1,10 +1,15 @@
 {
   "name": "More_lategame_research",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "title": "More research and infinite tech",
   "author": "Rebecca-x",
   "factorio_version": "1.1",
-  "dependencies": ["base >= 0.17"],
+  "dependencies": ["base >= 0.17",
+  "? Krastorio2",
+  "? boblogistics",
+  "? Seperated_And_Infinite_InserterCapacity_Research",
+  "? Robot_Battery_Research",
+  "? train_tech"],
   "homepage": "none",
   "description": "Adds additional research to the game k2 compatible"
 }

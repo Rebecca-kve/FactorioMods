@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 2023-02-02
+  Features:
+    - Disable this mods dublicate research for some mods
+    - boblogistics, seperatinsertercapacaty, klonan Robot_Battery_Research, train_tech
+---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 Date: 01.02.2023
   Features:

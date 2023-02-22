@@ -99,7 +99,7 @@ burner_assembling_machine.working_visualisations =
 		scale = 1 / 3,
       }
     }
-  },
+  }
 }
 
 data:extend({small-burner-assembling-machine})

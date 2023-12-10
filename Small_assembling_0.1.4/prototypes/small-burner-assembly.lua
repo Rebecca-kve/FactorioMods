@@ -1,6 +1,9 @@
 speed_multiplier = settings.startup["small-assembling-speed"].value
+ingredients_setting = settings.startup["small-assembling-ingredients"].value
 
-if mods['aai-industry'] then
+if not mods['aai-industry'] then
+  return
+end
 
 local small_burner_assembling_machine_item = util.table.deepcopy(data.raw["item"]["assembling-machine-1"])
 small_burner_assembling_machine_item.order = "[0]small-assembling-machine"
@@ -18,7 +21,7 @@ small_burner_assembling_machine_item.icons = {
 local small_burner_assembling_machine = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-1"])
 small_burner_assembling_machine.name = "small-burner-assembling-machine"
 small_burner_assembling_machine.minable.result = "small-burner-assembling-machine"
-small_burner_assembling_machine.ingredient_count = 1
+small_burner_assembling_machine.ingredient_count = ingredients_setting
 small_burner_assembling_machine.crafting_speed = 0.5 * speed_multiplier
 small_burner_assembling_machine.collision_box = {{-0.7, -0.7}, {0.7, 0.7}}
 small_burner_assembling_machine.selection_box = {{-1, -1}, {1, 1}}
@@ -159,6 +162,3 @@ data:extend({
 		}
 	}
 })
-
-
-end

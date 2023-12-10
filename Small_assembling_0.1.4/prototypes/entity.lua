@@ -1,4 +1,5 @@
 speed_multiplier = settings.startup["small-assembling-speed"].value
+ingredients_setting = settings.startup["small-assembling-ingredients"].value
 
 local small_assembling_machine_1_item = util.table.deepcopy(data.raw["item"]["assembling-machine-1"])
 small_assembling_machine_1_item.order = "[1]small-assembling-machine"
@@ -45,10 +46,9 @@ data:extend({small_assembling_machine_1_item, small_assembling_machine_2_item, s
 local small_assembling_machine_1 = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-1"])
 small_assembling_machine_1.name = "small-assembling-machine-1"
 small_assembling_machine_1.minable.result = "small-assembling-machine-1"
-small_assembling_machine_1.ingredient_count = 1
+small_assembling_machine_1.ingredient_count = ingredients_setting
 small_assembling_machine_1.crafting_speed = 0.5 * speed_multiplier
---small_assembling_machine_1.module_specification = { module_slots = 2}
---small_assembling_machine_1.allowed_effects = {"consumption", "speed", "productivity", "pollution"}
+
 small_assembling_machine_1.collision_box = {{-0.7, -0.7}, {0.7, 0.7}}
 small_assembling_machine_1.selection_box = {{-1, -1}, {1, 1}}
 small_assembling_machine_1.fast_replaceable_group = "small-assembling-machine"
@@ -106,7 +106,7 @@ small_assembling_machine_1.animation = {
 local small_assembling_machine_2 = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-1"])
 small_assembling_machine_2.name = "small-assembling-machine-2"
 small_assembling_machine_2.minable.result = "small-assembling-machine-2"
-small_assembling_machine_2.ingredient_count = 1
+small_assembling_machine_2.ingredient_count = ingredients_setting
 small_assembling_machine_2.crafting_speed = 0.75 * speed_multiplier
 small_assembling_machine_2.module_specification = { module_slots = 2}
 small_assembling_machine_2.allowed_effects = {"consumption", "speed", "productivity", "pollution"}
@@ -167,7 +167,7 @@ small_assembling_machine_2.animation = {
 local small_assembling_machine_3 = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-1"])
 small_assembling_machine_3.name = "small-assembling-machine-3"
 small_assembling_machine_3.minable.result = "small-assembling-machine-3"
-small_assembling_machine_3.ingredient_count = 1
+small_assembling_machine_3.ingredient_count = ingredients_setting
 small_assembling_machine_3.crafting_speed = 1.25 * speed_multiplier
 small_assembling_machine_3.module_specification = { module_slots = 4}
 small_assembling_machine_3.allowed_effects = {"consumption", "speed", "productivity", "pollution"}

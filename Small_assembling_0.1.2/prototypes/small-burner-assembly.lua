@@ -1,5 +1,4 @@
 speed_multiplier = settings.startup["small-assembling-speed"].value
-consumption_multiplier = settings.startup["consumption_multiplier"].value
 
 if mods['aai-industry'] then
 
@@ -29,9 +28,9 @@ small_burner_assembling_machine.crafting_categories = {"crafting", "basic-crafti
 small_burner_assembling_machine.energy_source = {
   type = "burner",
   fuel_categories = {"chemical", data.raw["fuel-category"]["processed-chemical"] and "processed-chemical"},
-  effectivity = 0.9 / consumption_multiplier,
+  effectivity = 0.9,
   fuel_inventory_size = 1,
-  emissions_per_minute = 4 * consumption_multiplier,
+  emissions_per_minute = 4,
   light_flicker =
   {
     minimum_light_size = 1,
@@ -51,9 +50,7 @@ small_burner_assembling_machine.energy_source = {
   }
 }
 
-small_burner_assembling_machine.animation = {
-layers = {
- {
+burner_assembling_machine.animation.layers[1] = {
   filename = "__aai-industry__/graphics/entity/burner-assembling-machine/burner-assembling-machine.png",
   priority="high",
   width = 107,
@@ -72,34 +69,8 @@ layers = {
     shift = util.by_pixel(0, 2 * 2 / 3),
     scale = 1 / 3
   }
-  },
-	{
-	  filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png",
-	  priority="high",
-	  width = 95,
-	  height = 83,
-	  frame_count = 1,
-	  line_length = 1,
-	  repeat_count = 32,
-	  draw_as_shadow = true,
-	  shift = util.by_pixel(8.5 * 2 / 3, 5.5 * 2 / 3),
-	  scale = 2/3,
-	  hr_version = {
-		filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1-shadow.png",
-		priority="high",
-		width = 190,
-		height = 165,
-		frame_count = 1,
-		line_length = 1,
-		repeat_count = 32,
-		draw_as_shadow = true,
-		shift = util.by_pixel(8.5 * 2 / 3, 5 * 2 / 3),
-		scale = 1/3
-	  }
-   }
- }
 }
-small_burner_assembling_machine.working_visualisations =
+burner_assembling_machine.working_visualisations =
 {
   {
     draw_as_glow = true,
@@ -112,7 +83,7 @@ small_burner_assembling_machine.working_visualisations =
       height = 226/2,
       frame_count = 1,
       animation_speed = 1,
-      shift = util.by_pixel(0* 2 / 3, 2 * 2 / 3),
+      shift = util.by_pixel(8.5 * 2 / 3, 5.5 * 2 / 3),
       draw_as_glow = true,
       blend_mode = "additive",
 	  scale = 2 / 3,
@@ -123,23 +94,24 @@ small_burner_assembling_machine.working_visualisations =
         height = 226,
         frame_count = 1,
         animation_speed = 1,
-        shift = util.by_pixel(0* 2 / 3, 2 * 2 / 3),
+        shift = util.by_pixel(8.5 * 2 / 3, 5.5 * 2 / 3),
+        scale = 0.5,
         draw_as_glow = true,
         blend_mode = "additive",
 		scale = 1 / 3,
       }
-    },
+    }
   }
 }
 
-data:extend({small_burner_assembling_machine, small_burner_assembling_machine_item})
+data:extend({small-burner-assembling-machine})
 
 data:extend({
 	{
 		type = "recipe",
 		name = "small-burner-assembling-machine",
+		enabled = true,
 		normal = {
-			enabled = true,
 			energy_required = 0.5,
 			ingredients = {
 				{type="item", name="iron-plate", amount=5},
@@ -149,7 +121,6 @@ data:extend({
 			results= { {type="item", name="small-burner-assembling-machine", amount=1} }
 		},
 		expensive = {
-			enabled = true,
 			energy_required = 0.5,
 			ingredients = {
 				{type="item", name="iron-plate", amount=10},
@@ -159,30 +130,6 @@ data:extend({
 			results= { {type="item", name="small-burner-assembling-machine", amount=1} }
 		}
 	}
-		{
-		type = "recipe",
-		name = "small-assembling-machine-1",
-		normal = {
-			enabled = false,
-			energy_required = 0.5,
-			ingredients = {
-				{"iron-gear-wheel", 5},
-				{"copper-cable", 10},
-				{"small-burner-assembling-machine", 1},
-			},
-			results= { {type="item", name="small-assembling-machine-1", amount=1} }
-		},
-		expensive = {
-			enabled = false,
-			energy_required = 0.5,
-			ingredients = {
-				{"iron-gear-wheel", 10},
-				{"copper-cable", 20},
-				{"small-burner-assembling-machine", 1},
-			},
-			results= { {type="item", name="small-assembling-machine-1", amount=1} }
-		}
-    },
 })
 
 

@@ -161,8 +161,8 @@ data:extend({
 			},
 			results= { {type="item", name="small-burner-assembling-machine", amount=1} }
 		}
-	}
-		{
+	},
+	{
 		type = "recipe",
 		name = "small-assembling-machine-1",
 		normal = {

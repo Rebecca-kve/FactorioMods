@@ -1,6 +1,6 @@
 speed_multiplier = settings.startup["small-assembling-speed"].value
 consumption_multiplier = settings.startup["consumption_multiplier"].value
-ngredients_setting = settings.startup["small-assembling-ingredients"].value
+ingredients_setting = settings.startup["small-assembling-ingredients"].value
 
 local small_assembling_machine_1_item = util.table.deepcopy(data.raw["item"]["assembling-machine-1"])
 small_assembling_machine_1_item.order = "[1]small-assembling-machine"

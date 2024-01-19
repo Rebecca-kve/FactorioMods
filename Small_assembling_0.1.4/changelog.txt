@@ -3,6 +3,7 @@ Version: 0.1.5
 Date: 2024-19-01
   Changes:
     - small-assembling-machine 1 recipe uses previous tier
+    - Tvede-dk: added settings for changing number of ingredients. This is useful for say BZ where 1 ingredients would be very limited
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 2023-10-04

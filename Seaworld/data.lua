@@ -1,0 +1,8 @@
+require("prototypes.seamap")
+require("prototypes.groups")
+require("prototypes.entity")
+require("prototypes.tutorial")
+require("prototypes.recipes")
+require("prototypes.technology")
+require("prototypes.unlock")
+require("prototypes.entity.ship")

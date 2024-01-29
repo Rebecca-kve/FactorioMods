@@ -1,14 +1,16 @@
 {
   "name": "SeaWorld",
-  "version": "0.1.13",
+  "version": "0.1.0",
   "factorio_version": "1.1",
   "title": "SeaWorld",
   "author": "Rebecca-x",
   "description": "You are stuck on an Island with no biters but also no resources. Escape it",
   "dependencies": [
     "base",
+    "islands_world",
     "FilterInsertersBegone",
     "Wood_Gasification",
+    "salt",
     "Krastorio2"
   ]
 }

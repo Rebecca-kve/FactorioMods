@@ -1,14 +1,14 @@
-data.raw["map-gen-presets"]["default"]["Seatorio"] = {
+data.raw["map-gen-presets"]["default"]["SeaWorld"] = {
     order = "Sea",
     basic_settings = {
         property_expression_names = {},
         autoplace_controls = {
-            ["iron-ore"] = { frequency = 0},
-            ["copper-ore"] = { frequency = 0},
-            ["stone"] = { frequency = 0},
-            ["coal"] = { frequency = 0},
-            ["uranium-ore"] = { frequency = 0},
-            ["crude-oil"] = { frequency = 0},
+            ["iron-ore"] = { frequency = 0.16666666666},
+            ["copper-ore"] = { frequency = 0.16666666666},
+            ["stone"] = { frequency = 0.16666666666},
+            ["coal"] = { frequency = 0.16666666666},
+            ["uranium-ore"] = { frequency = 0.16666666666},
+            ["crude-oil"] = { frequency = 0.16666666666},
 			["enemy-base"] = { size = 3, frequency = 3 },
         },
 		property_expression_names = {

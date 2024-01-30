@@ -1,7 +1,7 @@
 data:extend({
     {
         type = "item",
-        name = "ash",
+        name = "SW-ash",
         icon = "__Seaworld__/graphics/icons/ash.png",
         icon_size = 64,
         flags = {},

@@ -1,20 +1,9 @@
-data.raw.item["coal"].burnt_result = "ash"
-data.raw.item["coke"].burnt_result = "ash"
-data.raw.item["biomass"].burnt_result = "ash"
-data.raw.item["solid-fuel"].burnt_result = "ash"
-data.raw.item["wood"].burnt_result = "ash"
-data.raw.item["rocket-fuel"].burnt_result = "ash"
-data.raw.item["small-electric-pole"].burnt_result = "ash"
-data.raw.item["wooden-chest"].burnt_result = "ash"
+for _, item in pairs(data.raw.item) do
+    if item.fuel_value and not item.burnt_result then
+        item.burnt_result = "SW-ash"
+    end
+end
 
---[[
-data.raw.furnace["steel-furnace"].energy_source.burnt_inventory_size = 1
-data.raw.furnace["stone-furnace"].energy_source.burnt_inventory_size = 1
-data.raw.boiler["boiler"].energy_source.burnt_inventory_size = 1
-data.raw["mining-drill"]["burner-mining-drill"].energy_source.burnt_inventory_size = 1
-data.raw["assembling-machine"]["burner-offshore-pump"].energy_source.burnt_inventory_size = 1
-data.raw.locomotive["locomotive"].burner.burnt_inventory_size = 1
---]]
 
 for _, entity in pairs(data.raw) do
     for _, definition in pairs(entity) do

@@ -13,7 +13,7 @@ data:extend({
 		enabled = false,
         ingredients = {
 			{type = "fluid", name = "water", amount = 100},
-			{type = "item", name = "ash", amount = 10}
+			{type = "item", name = "SW-ash", amount = 10}
         },
 		results = {
 			{type = "fluid", name = "dirty-water", amount = 100}

@@ -1,8 +1,0 @@
-data.raw.item["coal"].burnt_result = "ash"
-data.raw.item["coke"].burnt_result = "ash"
-data.raw.item["biomass"].burnt_result = "ash"
-data.raw.item["solid-fuel"].burnt_result = "ash"
-data.raw.item["wood"].burnt_result = "ash"
-data.raw.item["rocket-fue"].burnt_result = "ash"
-data.raw.item["small-electric-pole "].burnt_result = "ash"
-data.raw.item["wooden-chest"].burnt_result = "ash"

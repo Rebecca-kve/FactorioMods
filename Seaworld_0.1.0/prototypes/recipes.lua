@@ -29,7 +29,7 @@ data:extend({
 	{
         type = "recipe",
 		name = "salt-from-water",
-        energy_required = 0,4,
+        energy_required = 0.4,
 		enabled = true,
         ingredients = {
 			{type = "fluid", name = "water", amount = 100}
@@ -37,7 +37,7 @@ data:extend({
 		results = {
 			{type = "item", name = "salt",  amount = 1},
 		},
-		icon = "__SeaTorio__/graphics/icons/salt-from-water.png",
+		icon = "__salt__/graphics/icons/salt.png",
 		icon_size = 64,
 		category = "fluid-filtration",
 		order = "a[sand-from-water]",
@@ -70,8 +70,8 @@ data:extend({
         energy_required = 3,
 		enabled = false,
         ingredients = {
-			{type = "fluid", name = "water", amount = 100}
-			{type = "item", name = "salt", amount = 5}
+			{type = "fluid", name = "water", amount = 100},
+			{type = "item", name = "salt", amount = 5},
 			{type = "item", name = "sulfur", amount = 5}
         },
 		results = {

@@ -1,8 +1,7 @@
-require("prototypes.seamap")
 require("prototypes.groups")
 require("prototypes.burnables")
 require("prototypes.intermediate")
-require("prototypes.recipes")
-require("prototypes.technology")
 require("prototypes.mechanicalinserter")
-require("prototypes.entity.ship")
+require("prototypes.recipes")
+require("prototypes.seamap")
+

@@ -8,20 +8,38 @@ data:extend({
 	---------NESSESARY STUFF
     {
         type = "recipe",
-		name = "dirty-water-production",
-        energy_required = 0.5,
+		name = "ash-dirty-water-production",
+        energy_required = 2.5,
 		enabled = true,
         ingredients = {
-			{type = "fluid", name = "water", amount = 100},
-			{type = "item", name = "SW-ash", amount = 10}
+			{type = "fluid", name = "water", amount = 500},
+			{type = "item", name = "SW-ash", amount = 50}
         },
 		results = {
-			{type = "fluid", name = "dirty-water", amount = 100}
+			{type = "fluid", name = "dirty-water", amount = 500}
 		},
 		icon = kr_fluids_icons_path .. "dirty-water.png",
 		icon_size = 64,
 		category = "chemistry",
-		order = "a[dirty-water-production]",
+		order = "a[ash-dirty-water-production]",
+		subgroup = "seatorio-fluid"
+    },
+	{
+        type = "recipe",
+		name = "sand-dirty-water-production",
+        energy_required = 2.5,
+		enabled = true,
+        ingredients = {
+			{type = "fluid", name = "water", amount = 500},
+			{type = "item", name = "sand", amount = 25}
+        },
+		results = {
+			{type = "fluid", name = "dirty-water", amount = 500}
+		},
+		icon = kr_fluids_icons_path .. "dirty-water.png",
+		icon_size = 64,
+		category = "chemistry",
+		order = "a[sand-dirty-water-production]",
 		subgroup = "seatorio-fluid"
     },
 
@@ -68,7 +86,7 @@ data:extend({
         type = "recipe",
 		name = "salt-from-water",
         energy_required = 0.4,
-		enabled = true,
+		enabled = false,
         ingredients = {
 			{type = "fluid", name = "water", amount = 100}
         },
@@ -113,6 +131,20 @@ data:extend({
 		result = "SW-ash"
 	},
 	
+	-- wood buff:
+  {
+    type = "recipe",
+    name = "SW-grow-wood-ash",
+    category = "growing",
+    energy_required = 60,
+    enabled = false,
+    ingredients = {
+      { type = "fluid", name = "water", amount = 200 },
+	  { name = "SW-ash", amount = 5 },
+    },
+    result = "wood",
+    result_count = 60,
+  },
 
 
 	--[[handcraft only

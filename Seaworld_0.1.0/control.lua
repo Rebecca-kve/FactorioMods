@@ -6,20 +6,22 @@ script.on_init(function()
 
     local items = remote.call("freeplay", "get_created_items")
 	
-	--Luxury
-	items["kr-sentinel"] = 2
-	items["iron-plate"] = 99
-    items["copper-plate"] = 100
+	--Luxury	
+	items["burner-inserter"] = 50
+	items["transport-belt"] = 400
 	--pipes
 	items["pipe"] = 100
 	items["pipe-to-ground"] = 50
     items["burner-offshore-pump"] = 1
 	--power
 	items["small-electric-pole"] = 50
-	items["kr-wind-turbine"] = 100
+	items["kr-wind-turbine"] = 50
 	--Starting buildings
-	items["kr-greenhouse"] = 4
-	items["kr-filtration-plant"] = 4
+	items["kr-greenhouse"] = 6
+	items["kr-filtration-plant"] = 2
+	items["chemical-plant"] = 1
+	items["boiler"] = 1
+	items["steam-engine"] = 2
 	
 	remote.call("freeplay", "set_created_items", items)
 

@@ -17,7 +17,7 @@ data.raw["map-gen-presets"]["default"]["SeaWorld"] = {
 			
 		terrain_segmentation = 1,
 		water = 1,
-        starting_area = 1.5,
+        starting_area = 0.5,
         peaceful_mode = false,
         cliff_settings = {
             richness = 1

@@ -8,8 +8,7 @@
   "dependencies": [
     "base",
     "islands_world",
-    "FilterInsertersBegone",
-    "Wood_Gasification",
+	"BurnerOffshorePump",
     "salt",
     "Krastorio2"
   ]

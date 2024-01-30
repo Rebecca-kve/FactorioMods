@@ -115,7 +115,7 @@ data:extend({
 	
 
 
-	-- handcraft only
+	--[[handcraft only
 	{
 		type = "recipe-category",
 		name = "crafting-handonly",
@@ -153,6 +153,6 @@ data:extend({
 		category = "crafting-handonly",
 		order = "a[iron-ore]",
 		subgroup = "seatorio-basic"
-    },
+    },]]
 
 })

@@ -84,23 +84,6 @@ data:extend({
 	
 	{
         type = "recipe",
-		name = "salt-from-water",
-        energy_required = 0.4,
-		enabled = false,
-        ingredients = {
-			{type = "fluid", name = "water", amount = 100}
-        },
-		results = {
-			{type = "item", name = "salt",  amount = 1},
-		},
-		icon = "__salt__/graphics/icons/salt.png",
-		icon_size = 64,
-		category = "fluid-filtration",
-		order = "a[sand-from-water]",
-		subgroup = "seatorio-basic"
-    },
-	{
-        type = "recipe",
 		name = "mineral-water-production",
         energy_required = 3,
 		enabled = false,

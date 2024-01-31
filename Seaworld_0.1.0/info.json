@@ -8,8 +8,8 @@
   "dependencies": [
     "base",
     "islands_world",
+	"bzchlorine",
 	"BurnerOffshorePump",
-    "salt",
     "Krastorio2"
   ]
 }

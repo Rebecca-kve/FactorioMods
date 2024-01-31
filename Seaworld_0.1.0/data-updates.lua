@@ -1,4 +1,5 @@
 require("prototypes.recipes_updates")
+require("prototypes.bzcompat")
 
 
 --[[

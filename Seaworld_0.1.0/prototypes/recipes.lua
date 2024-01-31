@@ -1,4 +1,3 @@
-
 data:extend({
 
 -- Remember to add a ash rescipe
@@ -28,10 +27,10 @@ data:extend({
         type = "recipe",
 		name = "sand-dirty-water-production",
         energy_required = 2.5,
-		enabled = true,
+		enabled = false,
         ingredients = {
 			{type = "fluid", name = "water", amount = 500},
-			{type = "item", name = "sand", amount = 25}
+			{type = "item", name = "sand", amount = 50}
         },
 		results = {
 			{type = "fluid", name = "dirty-water", amount = 500}
@@ -111,7 +110,28 @@ data:extend({
 		energy_required = 2,
 		enabled = true,
 		ingredients = {{"wood", 1}},
-		result = "SW-ash"
+		result = "SW-ash",
+		order = "a[ash]",
+		subgroup = "seatorio-inter",
+	},
+	{
+		type = "recipe",
+		name = "pyrolysis",
+		category = "smelting",
+		energy_required = 25,
+		icon = "__base__/graphics/icons/coal.png",
+        icon_size = 64,
+		enabled = false,
+        ingredients = {
+			{ "wood", 50 },
+			{ "empty-barrel", 1 }
+		},
+		results = {
+			{type = "item", name = "coal", amount = 50},
+			{type = "item", name = "empty-barrel", amount = 1, probability=0.50}
+		},
+		order = "c[pyro]",
+		subgroup = "seatorio-inter",
 	},
 	
 	-- wood buff:
@@ -120,7 +140,7 @@ data:extend({
     name = "SW-grow-wood-ash",
     category = "growing",
     energy_required = 60,
-    enabled = false,
+    enabled = true,
     ingredients = {
       { type = "fluid", name = "water", amount = 200 },
 	  { name = "SW-ash", amount = 5 },

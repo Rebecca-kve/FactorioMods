@@ -4,12 +4,13 @@
   "factorio_version": "1.1",
   "title": "SeaWorld",
   "author": "Rebecca-x",
-  "description": "You are stuck on an Island with no biters but also no resources. Escape it",
+  "description": "You are stuck on an Island. Escape it",
   "dependencies": [
     "base",
+    "boblibrary",
     "islands_world",
-	"bzchlorine",
-	"BurnerOffshorePump",
+    "bzchlorine",
+    "BurnerOffshorePump",
     "Krastorio2"
   ]
 }

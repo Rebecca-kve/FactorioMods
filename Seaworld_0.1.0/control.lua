@@ -12,16 +12,16 @@ script.on_init(function()
 	--pipes
 	items["pipe"] = 100
 	items["pipe-to-ground"] = 50
-    items["burner-offshore-pump"] = 1
+    items["burner-offshore-pump"] = 2
 	--power
 	items["small-electric-pole"] = 50
 	items["kr-wind-turbine"] = 50
 	--Starting buildings
 	items["kr-greenhouse"] = 6
-	items["kr-filtration-plant"] = 2
-	items["chemical-plant"] = 1
-	items["boiler"] = 1
-	items["steam-engine"] = 2
+	items["kr-filtration-plant"] = 4
+	items["chemical-plant"] = 2
+	items["boiler"] = 5
+	items["steam-engine"] = 8
 	
 	remote.call("freeplay", "set_created_items", items)
 

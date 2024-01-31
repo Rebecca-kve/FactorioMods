@@ -12,5 +12,5 @@ data:extend({
 })
 
 if deadlock then
-	deadlock.add_stack("SW-ash")
+	deadlock.add_stack("SW-ash", nil, "deadlock-stacking-1")
 end

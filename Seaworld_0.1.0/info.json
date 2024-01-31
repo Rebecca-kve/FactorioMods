@@ -8,6 +8,8 @@
   "dependencies": [
     "base",
     "boblibrary",
+	"FilterInsertersBegone",
+	"AquafarmExtended",
     "islands_world",
     "bzchlorine",
     "BurnerOffshorePump",

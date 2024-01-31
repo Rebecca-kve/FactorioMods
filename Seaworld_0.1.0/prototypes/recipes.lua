@@ -143,7 +143,7 @@ data:extend({
     enabled = true,
     ingredients = {
       { type = "fluid", name = "water", amount = 200 },
-	  { name = "SW-ash", amount = 5 },
+	  { name = "SW-ash", amount = 1 },
     },
     result = "wood",
     result_count = 60,

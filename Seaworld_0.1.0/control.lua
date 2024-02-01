@@ -20,8 +20,8 @@ script.on_init(function()
 	items["kr-greenhouse"] = 6
 	items["kr-filtration-plant"] = 4
 	items["chemical-plant"] = 2
-	items["boiler"] = 5
-	items["steam-engine"] = 8
+	items["boiler"] = 3
+	items["steam-engine"] = 4
 	
 	remote.call("freeplay", "set_created_items", items)
 
@@ -67,6 +67,11 @@ script.on_event(defines.events.on_gui_opened, function(event)
 	  local technology = player.force.technologies["kr-greenhouse"]
       technology.researched = true
       technology.enabled = true
+	  
+	  local technology = player.force.technologies["flow_control_valves_tech"]
+      technology.researched = true
+      technology.enabled = true
+	  
            
       do_once = false
 end    -- end function

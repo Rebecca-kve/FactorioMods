@@ -20,8 +20,8 @@ data:extend({
 		icon = kr_fluids_icons_path .. "dirty-water.png",
 		icon_size = 64,
 		category = "chemistry",
-		order = "a[ash-dirty-water-production]",
-		subgroup = "seatorio-fluid"
+		order = "a[fluid]-sw[ash]",
+		subgroup = "fluid-recipes",
     },
 	{
         type = "recipe",
@@ -38,8 +38,8 @@ data:extend({
 		icon = kr_fluids_icons_path .. "dirty-water.png",
 		icon_size = 64,
 		category = "chemistry",
-		order = "a[sand-dirty-water-production]",
-		subgroup = "seatorio-fluid"
+		order = "a[fluid]-sw[ash]",
+		subgroup = "fluid-recipes",
     },
 
 	{
@@ -58,8 +58,8 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/heavy-oil.png",
 		icon_size = 64,
 		category = "chemistry",
-		order = "a[heavy-oil-production]",
-		subgroup = "seatorio-fluid"
+		order = "a[fluid]-sw[heavy-oil-production]",
+		subgroup = "fluid-recipes",
     },
 
 	{
@@ -77,8 +77,8 @@ data:extend({
 		icon = "__base__/graphics/icons/fluid/crude-oil.png",
 		icon_size = 64,
 		category = "oil-processing",
-		order = "b[crude-oil-production]",
-		subgroup = "seatorio-fluid"
+		order = "a[fluid]-sw[crude-oil-production]",
+		subgroup = "fluid-recipes",
     },
 	
 	{
@@ -97,8 +97,8 @@ data:extend({
 		icon = kr_fluids_icons_path .. "mineral-water.png",
 		icon_size = 64,
 		category = "chemistry",
-		order = "c[mineral-water-production]",
-		subgroup = "seatorio-fluid"
+		order = "a[fluid]-sw[mineral-water-production]",
+		subgroup = "fluid-recipes",
     },
 
 
@@ -111,15 +111,15 @@ data:extend({
 		enabled = true,
 		ingredients = {{"wood", 1}},
 		result = "SW-ash",
-		order = "a[ash]",
-		subgroup = "seatorio-inter",
+		order = "sw[ash]",
+		subgroup = "raw-material",
 	},
 	{
 		type = "recipe",
 		name = "pyrolysis",
 		category = "smelting",
 		energy_required = 25,
-		icon = "__base__/graphics/icons/coal.png",
+		icon = "__Seaworld__/graphics/icons/pyrolysis.png",
         icon_size = 64,
 		enabled = false,
         ingredients = {
@@ -130,8 +130,8 @@ data:extend({
 			{type = "item", name = "coal", amount = 50},
 			{type = "item", name = "empty-barrel", amount = 1, probability=0.50}
 		},
-		order = "c[pyro]",
-		subgroup = "seatorio-inter",
+		order = "sw[pyro]",
+		subgroup = "raw-material",
 	},
 	
 	-- wood buff:
@@ -139,6 +139,8 @@ data:extend({
     type = "recipe",
     name = "SW-grow-wood-ash",
     category = "growing",
+	icon = "__Seaworld__/graphics/icons/ashtowood.png",
+    icon_size = 64,
     energy_required = 60,
     enabled = true,
     ingredients = {
@@ -146,6 +148,7 @@ data:extend({
 	  { name = "SW-ash", amount = 1 },
     },
     result = "wood",
+	order = "sw[SW-grow-wood-ash]",
     result_count = 60,
   },
 

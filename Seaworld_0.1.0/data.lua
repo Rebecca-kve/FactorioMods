@@ -1,4 +1,3 @@
-require("prototypes.groups")
 require("prototypes.burnables")
 require("prototypes.intermediate")
 require("prototypes.mechanicalinserter")

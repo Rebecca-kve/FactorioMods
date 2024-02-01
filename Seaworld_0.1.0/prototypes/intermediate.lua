@@ -5,8 +5,8 @@ data:extend({
         icon = "__Seaworld__/graphics/icons/ash.png",
         icon_size = 64,
         flags = {},
-        subgroup = "seatorio-inter",
-        order = "ash",
+        subgroup = "intermediate-product",
+        order = "a[ash]",
         stack_size = 1000
     },
 })

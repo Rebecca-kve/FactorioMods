@@ -24,6 +24,12 @@ bobmods.lib.recipe.set_result("dirty-water-filtration-3", { type = "item", name 
 --early buildings
 bobmods.lib.recipe.replace_ingredient("kr-filtration-plant", "steel-beam", "iron-beam")
 bobmods.lib.recipe.replace_ingredient("kr-filtration-plant", "engine-unit", "pipe")
+bobmods.lib.recipe.replace_ingredient("kr-filtration-plant", "glass", "stone-brick")
+bobmods.lib.recipe.replace_ingredient("kr-greenhouse", "glass", "stone-brick")
+
+--early valve
+bobmods.lib.recipe.remove_ingredient("overflow-valve", "electronic-circuit")
+bobmods.lib.recipe.remove_ingredient("underflow-valve", "electronic-circuit")
 
 data.raw.recipe["chemical-plant"].ingredients = {
   { "iron-beam", 4 },

@@ -3,12 +3,8 @@ data.raw["map-gen-presets"]["default"]["SeaWorld"] = {
     basic_settings = {
         property_expression_names = {},
         autoplace_controls = {
-            ["iron-ore"] = { frequency = 0.5},
-            ["copper-ore"] = { frequency = 0.5},
-            ["stone"] = { frequency = 0.5},
-            ["coal"] = { frequency = 0.5},
-            ["uranium-ore"] = { frequency = 0.5},
-            ["crude-oil"] = { frequency = 0.5},
+            ["uranium-ore"] = { frequency = 3},
+            ["imersite"] = { frequency = 3},
 			["enemy-base"] = { size = 3, frequency = 3 },
         },
 		property_expression_names = {

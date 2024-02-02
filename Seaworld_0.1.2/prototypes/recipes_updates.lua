@@ -21,6 +21,9 @@ if settings.startup["dirty-water-buff"].value == true then
   bobmods.lib.recipe.set_result("dirty-water-filtration-1", { type = "item", name = "iron-ore", amount = 2 })
   bobmods.lib.recipe.set_result("dirty-water-filtration-2", { type = "item", name = "copper-ore", amount = 2 })
   bobmods.lib.recipe.set_result("dirty-water-filtration-3", { type = "item", name = "raw-rare-metals", amount = 1 })
+  
+  else
+  bobmods.lib.recipe.set_result("dirty-water-filtration-stone", { type = "item", name = "stone", amount = 1 })
 end
 
 --early buildings

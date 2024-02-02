@@ -17,14 +17,16 @@ add_recipe_to_start("kr-enriched-ores", "dirty-water-filtration-2")
 add_recipe_to_start("coal-liquefaction", "coal-filtration")
 
 -- dirty water buff
-bobmods.lib.recipe.set_result("dirty-water-filtration-1", { type = "item", name = "iron-ore", amount = 2 })
-bobmods.lib.recipe.set_result("dirty-water-filtration-2", { type = "item", name = "copper-ore", amount = 2 })
-bobmods.lib.recipe.set_result("dirty-water-filtration-3", { type = "item", name = "raw-rare-metals", amount = 1 })
+if settings.startup["dirty-water-buff"].value == true then
+  bobmods.lib.recipe.set_result("dirty-water-filtration-1", { type = "item", name = "iron-ore", amount = 2 })
+  bobmods.lib.recipe.set_result("dirty-water-filtration-2", { type = "item", name = "copper-ore", amount = 2 })
+  bobmods.lib.recipe.set_result("dirty-water-filtration-3", { type = "item", name = "raw-rare-metals", amount = 1 })
+end
 
 --early buildings
 bobmods.lib.recipe.replace_ingredient("kr-filtration-plant", "steel-beam", "iron-beam")
 bobmods.lib.recipe.replace_ingredient("kr-filtration-plant", "engine-unit", "pipe")
-bobmods.lib.recipe.replace_ingredient("kr-filtration-plant", "glass", "stone-brick")
+--bobmods.lib.recipe.replace_ingredient("kr-filtration-plant", "glass", "stone-brick")
 bobmods.lib.recipe.replace_ingredient("kr-greenhouse", "glass", "stone-brick")
 
 --early valve

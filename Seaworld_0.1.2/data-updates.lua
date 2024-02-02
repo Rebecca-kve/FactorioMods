@@ -1,10 +1,11 @@
 require("prototypes.recipes_updates")
 require("prototypes.bzcompat")
-
+require("prototypes.Planetfallcompat")
 
 --[[
-enable_productivity_recipes = {
 
+enable_productivity_recipes = {
+  "ash",
 }
 
 for k, v in pairs(data.raw.module) do
@@ -18,4 +19,5 @@ for k, v in pairs(data.raw.module) do
 end
 
 ]]
+
 

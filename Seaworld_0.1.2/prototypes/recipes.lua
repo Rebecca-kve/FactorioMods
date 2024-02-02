@@ -145,7 +145,7 @@ data:extend({
     enabled = true,
     ingredients = {
       { type = "fluid", name = "water", amount = 200 },
-	  { name = "SW-ash", amount = 1 },
+	  { name = "SW-ash", amount = 10 },
     },
     result = "wood",
 	order = "sw[SW-grow-wood-ash]",
@@ -192,5 +192,42 @@ data:extend({
 		order = "a[iron-ore]",
 		subgroup = "seatorio-basic"
     },]]
+
+	{
+		type = "recipe",
+		name = "dirty-water-filtration-stone",
+		category = "fluid-filtration",
+		icons = {
+		  {
+			icon = data.raw.fluid["dirty-water"].icon,
+			icon_size = data.raw.fluid["dirty-water"].icon_size,
+		  },
+		  {
+			icon = data.raw.item["stone"].icon,
+			icon_size = data.raw.item["stone"].icon_size,
+			scale = 0.20 * (data.raw.fluid["dirty-water"].icon_size / data.raw.item["stone"].icon_size),
+			shift = { 0, 4 },
+		  },
+		},
+		icon_size = data.raw.fluid["dirty-water"].icon_size,
+		energy_required = 2,
+		enabled = true,
+		allow_as_intermediate = false,
+		always_show_made_in = true,
+		always_show_products = true,
+		ingredients = {
+		  { type = "fluid", name = "dirty-water", amount = 100 },
+		},
+		results = {
+		  { type = "fluid", name = "water", amount = 100 },
+		  { type = "item", name = "stone", amount = 3 },
+		},
+		crafting_machine_tint = {
+		  primary = { r = 0.49, g = 0.62, b = 0.75, a = 0.6 }, --dirty
+		  secondary = { r = 0.64, g = 0.83, b = 0.93, a = 0.9 }, --clear
+		},
+		subgroup = "raw-material",
+		order = "w010[dirty-water-filtration-stone]",
+	  },
 
 })

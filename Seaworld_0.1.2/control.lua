@@ -36,11 +36,15 @@ script.on_init(function()
 		end
 	end
 
+
   --Remove start resources
+
 for _, surface in pairs(game.surfaces) do
     for _, entity in pairs(surface.find_entities_filtered({ area, type = "resource" })) do
         -- Check if the resource is not stone before destroying
-        if entity.name ~= "stone" then
+		--if entity.name ~= "stone" continue
+		--if entity.name ~= "gas" continue
+        if entity.name ~= "stone" and entity.name ~= "gas" then
             if entity.destroy() then
                 num = num + 1
             end

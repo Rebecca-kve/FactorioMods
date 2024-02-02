@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 2024-02-02
+  Changes:
+    - filtration plant recipe needs glass again
+    - new stone recipe (usefull to make more landfill)
+    - bzgas compatibility
+    - some minor planetfall mod balance
+    - ash wood recipe change
+    - added a setting to remove dirty water filtration buff
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 2024-02-01
+  Changes:
+    - Map preset update
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2024-02-01
+  Changes:
+    - Initial Release

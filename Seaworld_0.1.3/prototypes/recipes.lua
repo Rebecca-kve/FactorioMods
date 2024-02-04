@@ -41,6 +41,24 @@ data:extend({
 		order = "a[fluid]-sw[ash]",
 		subgroup = "fluid-recipes",
     },
+	
+	{
+        type = "recipe",
+		name = "SW-steam-to-water",
+        energy_required = 1,
+		enabled = true,
+        ingredients = {
+			{type = "fluid", name = "steam", amount = 100},
+        },
+		results = {
+			{type = "fluid", name = "water", amount = 100}
+		},
+		icon = "__base__/graphics/icons/fluid/steam.png",
+		icon_size = 64,
+		category = "chemistry",
+		order = "a[fluid]-sw[steam]",
+		subgroup = "fluid-recipes",
+    },
 
 	{
         type = "recipe",

@@ -6,6 +6,7 @@ Date: 2024-02-04
     - Coal filtration output dirty water
     - Option to gain more landfill
     - oil recipe output dirty water
+    - steam to water recipe (usefull to turn fuel to ash)
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 2024-02-02

@@ -51,7 +51,7 @@ data:extend({
 			{type = "fluid", name = "steam", amount = 100},
         },
 		results = {
-			{type = "fluid", name = "water", amount = 100}
+			{type = "fluid", name = "water", amount = 98}
 		},
 		icon = "__base__/graphics/icons/fluid/steam.png",
 		icon_size = 64,

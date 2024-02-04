@@ -65,14 +65,16 @@ data:extend({
 	{
         type = "recipe",
 		name = "crude-oil-production",
-        energy_required = 3,
+        energy_required = 2.5,
 		enabled = false,
         ingredients = {
 			{type = "fluid", name = "heavy-oil", amount = 100},
+			{type = "fluid", name = "steam", amount = 50},
 			{type = "item", name = "SW-ash", amount = 20},
         },
 		results = {
-			{type = "fluid", name = "crude-oil", amount = 100}
+			{type = "fluid", name = "crude-oil", amount = 100},
+			{type = "fluid", name = "dirty-water", amount = 50},
 		},
 		icon = "__base__/graphics/icons/fluid/crude-oil.png",
 		icon_size = 64,

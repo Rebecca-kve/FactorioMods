@@ -32,6 +32,27 @@ bobmods.lib.recipe.replace_ingredient("kr-filtration-plant", "engine-unit", "pip
 --bobmods.lib.recipe.replace_ingredient("kr-filtration-plant", "glass", "stone-brick")
 bobmods.lib.recipe.replace_ingredient("kr-greenhouse", "glass", "stone-brick")
 
+--more dirty water
+data.raw.recipe["coal-filtration"].results = {
+      { type = "item", name = "coal", amount = 8 },
+      { type = "fluid", name = "dirty-water", amount = 40 },
+}
+
+
+--More landfill
+if settings.startup["more-landfill"].value == true then
+for _, recipe in pairs(data.raw.recipe) do
+    if recipe.result == "landfill" then
+        if recipe.result_count then
+            recipe.result_count = recipe.result_count * 5
+        else
+            -- If result_count is not specified, assume it's 1 and multiply by 5
+            recipe.result_count = 5
+        end
+    end
+end
+end
+
 --early valve
 bobmods.lib.recipe.remove_ingredient("overflow-valve", "electronic-circuit")
 bobmods.lib.recipe.remove_ingredient("underflow-valve", "electronic-circuit")

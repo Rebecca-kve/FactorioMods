@@ -31,11 +31,11 @@ data:extend({burner_beacon_item})
 
 local burner_only_entity = flib_data_util.copy_prototype(data.raw["assembling-machine"]["assembling-machine-1"], "SW-burner-beacon")
 burner_only_entity.crafting_categories = {"SW-fuel-burn"}
-burner_only_entity.energy_usage = "9.0MW"
+burner_only_entity.energy_usage = "1.0MW"
 burner_only_entity.energy_source = {
 	type = "burner",
 	fuel_categories = fuel,
-	effectivity = 1,
+	effectivity = 0.25,
 	fuel_inventory_size = 1,
 	emissions_per_minute = 4,
 	burnt_inventory_size = 1,

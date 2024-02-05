@@ -44,24 +44,6 @@ data:extend({
 	
 	{
         type = "recipe",
-		name = "SW-steam-to-water",
-        energy_required = 1,
-		enabled = true,
-        ingredients = {
-			{type = "fluid", name = "steam", amount = 100},
-        },
-		results = {
-			{type = "fluid", name = "water", amount = 98}
-		},
-		icon = "__base__/graphics/icons/fluid/steam.png",
-		icon_size = 64,
-		category = "chemistry",
-		order = "a[fluid]-sw[steam]",
-		subgroup = "fluid-recipes",
-    },
-
-	{
-        type = "recipe",
 		name = "heavy-oil-production",
         energy_required = 2.5,
 		enabled = true,
@@ -123,17 +105,6 @@ data:extend({
 
 
 	--Furnace
-	{
-		type = "recipe",
-		name = "ash",
-		category = "smelting",
-		energy_required = 2,
-		enabled = true,
-		ingredients = {{"wood", 1}},
-		result = "SW-ash",
-		order = "sw[ash]",
-		subgroup = "raw-material",
-	},
 	{
 		type = "recipe",
 		name = "pyrolysis",
@@ -249,5 +220,27 @@ data:extend({
 		subgroup = "raw-material",
 		order = "w010[dirty-water-filtration-stone]",
 	  },
+
+
+	  -- New hidden recipe for fuel burning
+	  {
+		name = "SW-fuel-burning",
+		type = "recipe",
+		enabled = true,
+		hidden = true,
+		hide_from_stats = true,
+		icon = "__Seaworld__/graphics/icons/burner.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		category = "SW-fuel-burn",
+		ingredients = {},
+		results = {},
+		subgroup = "other",
+		energy_required = 10,
+	},
+	{
+		name = "SW-fuel-burn",
+		type = "recipe-category",
+	},
 
 })

@@ -2,8 +2,9 @@
 Version: 0.1.4
 Date: 2024-02-05
   Changes:
-    - burner generator burnt inventory
-    - Adds a burner lamp
+    - burner generator burnt inventory (for mods that add burner generators)
+    - New burner machine (used to make ash)
+    - removed wood to ash and steam to water recipe (use the ash machine instead)
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.3
 Date: 2024-02-04

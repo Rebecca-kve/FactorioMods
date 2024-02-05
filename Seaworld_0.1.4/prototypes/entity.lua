@@ -107,7 +107,7 @@ data:extend({
 	{
 		type = "recipe",
 		enabled = true,
-		energy_required = 10,
+		energy_required = 2,
 		name = "SW-burner-beacon",
         ingredients = {
 			{"stone-brick", 20},

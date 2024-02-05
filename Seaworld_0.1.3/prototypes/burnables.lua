@@ -23,7 +23,7 @@ for _, entity in pairs(data.raw) do
     for _, definition in pairs(entity) do
         if definition.burner then
             -- Check if the entity is a locomotive (you may need to adjust this condition)
-            if definition.type == "locomotive" then
+            if definition.type == "locomotive" or definition.type == "burner-generator" then
                 definition.burner.burnt_inventory_size = 1
             end
         end

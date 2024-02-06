@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 2024-02-06
+  Changes:
+    - internal change in how dirty water filtration is modified, should be compatible with even future mods adding new dirty water filtration recipes.
+    - Dirty water setting, can scale the recipe to the users preferance or be turned of by using 1.
+    - inserter setting min value from 0 to 1 (no one will reduce their speed anyways right?)
+    - burner furnace 4 to 6MW
+---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 2024-02-05
   Changes:

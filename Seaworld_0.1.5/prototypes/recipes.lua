@@ -207,11 +207,12 @@ data:extend({
 		always_show_made_in = true,
 		always_show_products = true,
 		ingredients = {
-		  { type = "fluid", name = "dirty-water", amount = 100 },
+		  { type = "fluid", name = "dirty-water", amount = 100, catalyst_amount = 100 },
 		},
 		results = {
-		  { type = "fluid", name = "water", amount = 100 },
-		  { type = "item", name = "stone", amount = 3 },
+		  { type = "fluid", name = "water", amount = 90, catalyst_amount = 90 },
+		  {type = "item",  name = "stone", probability = 0.30, amount = 1},
+		  {type = "item",  name = "stone", probability = 0.15, amount = 1},
 		},
 		crafting_machine_tint = {
 		  primary = { r = 0.49, g = 0.62, b = 0.75, a = 0.6 }, --dirty

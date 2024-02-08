@@ -3,7 +3,7 @@ Version: 0.1.6
 Date: 2024-02-09
   Changes:
     - burner offshore pump is no longer required
-    - added burnt inventory to some more entityes
+    - more burnt inventory (vehicle/spidertrons)
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.5
 Date: 2024-02-06

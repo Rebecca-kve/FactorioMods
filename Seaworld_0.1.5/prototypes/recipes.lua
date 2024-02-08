@@ -211,8 +211,8 @@ data:extend({
 		},
 		results = {
 		  { type = "fluid", name = "water", amount = 90, catalyst_amount = 90 },
-		  {type = "item",  name = "stone", probability = 0.30, amount = 1},
-		  {type = "item",  name = "stone", probability = 0.15, amount = 1},
+		  {type = "item",  name = "stone", probability = 1, amount = 1},
+		  {type = "item",  name = "stone", probability = 0.10, amount = 1},
 		},
 		crafting_machine_tint = {
 		  primary = { r = 0.49, g = 0.62, b = 0.75, a = 0.6 }, --dirty

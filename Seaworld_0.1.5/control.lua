@@ -12,7 +12,7 @@ script.on_init(function()
 	--pipes
 	items["pipe"] = 100
 	items["pipe-to-ground"] = 50
-    items["burner-offshore-pump"] = 2
+    items["offshore-pump"] = 2
 	--power
 	items["small-electric-pole"] = 50
 	items["kr-wind-turbine"] = 50

@@ -115,3 +115,5 @@ for _, recipe_data in pairs(data.raw["recipe"]) do
     end
 end
 
+bobmods.lib.tech.add_recipe_unlock("sulfur-processing", "dirty-water-filtration-uranium-ore")
+bobmods.lib.tech.add_recipe_unlock("kr-quarry-minerals-extraction", "dirty-water-filtration-raw-imersite")

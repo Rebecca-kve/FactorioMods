@@ -222,6 +222,84 @@ data:extend({
 		order = "w010[dirty-water-filtration-stone]",
 	  },
 
+--- Uranium and imersite
+
+	{
+		type = "recipe",
+		name = "dirty-water-filtration-uranium-ore",
+		category = "fluid-filtration",
+		icons = {
+		  {
+			icon = data.raw.fluid["dirty-water"].icon,
+			icon_size = data.raw.fluid["dirty-water"].icon_size,
+		  },
+		  {
+			icon = data.raw.item["uranium-ore"].icon,
+			icon_size = data.raw.item["uranium-ore"].icon_size,
+			scale = 0.20 * (data.raw.fluid["dirty-water"].icon_size / data.raw.item["uranium-ore"].icon_size),
+			shift = { 0, 4 },
+		  },
+		},
+		icon_size = data.raw.fluid["dirty-water"].icon_size,
+		energy_required = 2,
+		enabled = false,
+		allow_as_intermediate = false,
+		always_show_made_in = true,
+		always_show_products = true,
+		ingredients = {
+		  { type = "fluid", name = "dirty-water", amount = 100, catalyst_amount = 100 },
+		},
+		results = {
+		  { type = "fluid", name = "water", amount = 90, catalyst_amount = 90 },
+		  {type = "item",  name = "stone", probability = 0.40, amount = 1},
+		  {type = "item",  name = "uranium-ore", probability = 0.01, amount = 1},
+		},
+		crafting_machine_tint = {
+		  primary = { r = 0.49, g = 0.62, b = 0.75, a = 0.6 }, --dirty
+		  secondary = { r = 0.64, g = 0.83, b = 0.93, a = 0.9 }, --clear
+		},
+		subgroup = "raw-material",
+		order = "w010[dirty-water-filtration-uranium-ore]",
+	  },
+	  
+	  
+	  	{
+		type = "recipe",
+		name = "dirty-water-filtration-raw-imersite",
+		category = "fluid-filtration",
+		icons = {
+		  {
+			icon = data.raw.fluid["dirty-water"].icon,
+			icon_size = data.raw.fluid["dirty-water"].icon_size,
+		  },
+		  {
+			icon = data.raw.item["raw-imersite"].icon,
+			icon_size = data.raw.item["raw-imersite"].icon_size,
+			scale = 0.20 * (data.raw.fluid["dirty-water"].icon_size / data.raw.item["raw-imersite"].icon_size),
+			shift = { 0, 4 },
+		  },
+		},
+		icon_size = data.raw.fluid["dirty-water"].icon_size,
+		energy_required = 2,
+		enabled = false,
+		allow_as_intermediate = false,
+		always_show_made_in = true,
+		always_show_products = true,
+		ingredients = {
+		  { type = "fluid", name = "dirty-water", amount = 100, catalyst_amount = 100 },
+		},
+		results = {
+		  { type = "fluid", name = "water", amount = 90, catalyst_amount = 90 },
+		  {type = "item",  name = "stone", probability = 0.40, amount = 1},
+		  {type = "item",  name = "raw-imersite", probability = 0.01, amount = 1},
+		},
+		crafting_machine_tint = {
+		  primary = { r = 0.49, g = 0.62, b = 0.75, a = 0.6 }, --dirty
+		  secondary = { r = 0.64, g = 0.83, b = 0.93, a = 0.9 }, --clear
+		},
+		subgroup = "raw-material",
+		order = "w010[dirty-water-filtration-raw-imersite]",
+	  },
 
 	  -- New hidden recipe for fuel burning
 	  {

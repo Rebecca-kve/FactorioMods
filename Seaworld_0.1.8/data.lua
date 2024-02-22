@@ -4,5 +4,4 @@ require("prototypes.recipes")
 require("prototypes.seamap")
 require("prototypes.entity")
 require("prototypes.burnables")
-
-
+require("prototypes.ashmaker")

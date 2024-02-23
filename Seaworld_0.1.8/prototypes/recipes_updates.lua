@@ -60,6 +60,9 @@ data.raw.recipe["coal-filtration"].results = {
       { type = "fluid", name = "dirty-water", amount = 40 },
 }
 
+if not mods['space-exploration'] then
+    bobmods.lib.tech.add_recipe_unlock("kr-quarry-minerals-extraction", "dirty-water-filtration-raw-imersite")
+
 -- dirty water buff
 if dirtywaterbuff > 1 then
   -- Iterate over all recipes
@@ -86,7 +89,7 @@ if dirtywaterbuff > 1 then
     end
   end  
 end
-
+end
 -- search for dirty water recipes and unlock them
 
 for _, recipe_data in pairs(data.raw["recipe"]) do
@@ -116,4 +119,3 @@ for _, recipe_data in pairs(data.raw["recipe"]) do
 end
 
 bobmods.lib.tech.add_recipe_unlock("sulfur-processing", "dirty-water-filtration-uranium-ore")
-bobmods.lib.tech.add_recipe_unlock("kr-quarry-minerals-extraction", "dirty-water-filtration-raw-imersite")

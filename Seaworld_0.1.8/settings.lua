@@ -11,7 +11,7 @@ data:extend({
 		type = "double-setting",
 		name = "inserter-speed",
 		setting_type = "startup",
-		default_value = 3,
+		default_value = 2,
 		minimum_value = 1,
 		maximum_value = 10,
 	},

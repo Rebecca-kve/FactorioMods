@@ -11,24 +11,7 @@ color = {
 local fuel = { "chemical", "vehicle-fuel" }
 if mods["aai-industry"] then table.insert(fuel, "processed-chemical") end
 
-
-local burner_beacon_item = flib_data_util.copy_prototype(data.raw["item"]["stone-furnace"], "SW-burner-beacon")
-burner_beacon_item.order = "a[burner-furnace]"
-burner_beacon_item.icons = {
-	{
-		icon = "__base__/graphics/icons/stone-furnace.png",
-		icon_size = 64,
-		tint = color.burner
-	},
-	{
-		icon = "__Seaworld__/graphics/icons/burner.png",
-		icon_size = 64,
-		scale = 0.40,
-		shift = { 8, -8 },
-	},
-}
-data:extend({burner_beacon_item})
-
+--- the old machine is used as a dummy to preserve items
 local burner_only_entity = flib_data_util.copy_prototype(data.raw["assembling-machine"]["assembling-machine-1"], "SW-burner-beacon")
 burner_only_entity.crafting_categories = {"SW-fuel-burn"}
 burner_only_entity.energy_usage = "1.2MW"
@@ -56,16 +39,3 @@ burner_only_entity.animation.layers[1].hr_version.tint = color.burner
 
 data:extend({burner_only_entity})
 
-data:extend({
-
-	{
-		type = "recipe",
-		enabled = true,
-		energy_required = 2,
-		name = "SW-burner-beacon",
-        ingredients = {
-			{"stone-brick", 10},
-        },
-		result = "SW-burner-beacon",
-	},
-})

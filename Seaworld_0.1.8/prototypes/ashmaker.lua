@@ -9,8 +9,9 @@ color = {
 	  a = 1.0 },
 }
 
-local burner_furn_item = flib_data_util.copy_prototype(data.raw["item"]["stone-furnace"], "SW-burner-furnace")
+local burner_furn_item = flib_data_util.copy_prototype(data.raw["item"]["stone-furnace"], "SW-burner-beacon")
 burner_furn_item.order = "a[burner-furnace]"
+burner_furn_item.place_result = "SW-burner-furnace"
 burner_furn_item.icons = {
 	{
 		icon = "__base__/graphics/icons/stone-furnace.png",
@@ -26,8 +27,10 @@ burner_furn_item.icons = {
 }
 data:extend({burner_furn_item})
 
+
 local burner_furn_entity = flib_data_util.copy_prototype(data.raw["furnace"]["stone-furnace"], "SW-burner-furnace")
 burner_furn_entity.crafting_categories = {"SW-fuel-recipes"}
+burner_furn_entity.minable.result = "SW-burner-beacon"
 burner_furn_entity.energy_source = {
     type = "void"
 }
@@ -49,11 +52,11 @@ data:extend({
 		type = "recipe",
 		enabled = true,
 		energy_required = 2,
-		name = "SW-burner-furnace",
+		name = "SW-burner-beacon",
         ingredients = {
 			{"stone-brick", 10},
         },
-		result = "SW-burner-furnace",
+		result = "SW-burner-beacon",
 	},
 })
 

@@ -1,3 +1,6 @@
 require("prototypes.entity")
 require("prototypes.tech")
-require("prototypes.power-fixes")
+
+if ( mods["bobpower"] and mods["Krastorio2"] ) then
+	require("prototypes.power-fixes")
+end

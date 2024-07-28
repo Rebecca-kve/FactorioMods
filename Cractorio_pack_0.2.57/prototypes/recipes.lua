@@ -1,9 +1,9 @@
 local util = require("__boblibrary__.recipe-functions");
---[[ mod got updated
-if ( mods['wret-beacon-rebalance-mod'] and mods['Krastorio2'] ) then
-	bobmods.lib.recipe.replace_ingredient("kr-singularity-beacon", "beacon", "beacon3-item")
-end
-]]
+
+--if ( mods['wret-beacon-rebalance-mod'] and mods['Krastorio2'] ) then
+--	bobmods.lib.recipe.replace_ingredient("kr-singularity-beacon", "beacon", "beacon3-item")
+--end
+
 if mods['Krastorio2'] then
 	if mods['bobassembly'] then
 		bobmods.lib.recipe.replace_ingredient("kr-advanced-assembling-machine", "assembling-machine-3", "assembling-machine-6")

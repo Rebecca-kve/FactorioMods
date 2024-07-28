@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bric3jio3dvwh"
-path="res://.godot/imported/thumbnail.png-cbe5c4f510eb4e0d8952590a9a214a8e.ctex"
+uid="uid://vvplk8bg2brp"
+path="res://.godot/imported/thumbnail.png-5d5cb5853263ed017b846fadb2d9cd8e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GitHub/FactorioMods/Cractorio_pack_0.2.57/thumbnail.png"
-dest_files=["res://.godot/imported/thumbnail.png-cbe5c4f510eb4e0d8952590a9a214a8e.ctex"]
+source_file="res://Modding/Cractorio_pack_0.2.56/Cractorio_pack_0.2.56/thumbnail.png"
+dest_files=["res://.godot/imported/thumbnail.png-5d5cb5853263ed017b846fadb2d9cd8e.ctex"]
 
 [params]
 

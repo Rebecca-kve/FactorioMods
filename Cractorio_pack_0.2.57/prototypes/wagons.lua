@@ -51,7 +51,7 @@ nuclear_cargo.name = "nuclear-cargo-wagon"
 nuclear_cargo.minable.result = nuclear_cargo.name
 nuclear_cargo.max_health = 1000
 nuclear_cargo.weight = 2500
-nuclear_cargo.inventory_size = 60
+nuclear_cargo.inventory_size = 60 + kr-cargo-wagon-bonus
 nuclear_cargo.color = fuelcellcolor.nuclear_color
 
 local nuclear_fluid = table.deepcopy(data.raw["fluid-wagon"]["fluid-wagon"])
@@ -73,7 +73,7 @@ fusion_cargo.name = "fusion-cargo-wagon"
 fusion_cargo.minable.result = fusion_cargo.name
 fusion_cargo.max_health = 1200
 fusion_cargo.weight = 3000
-fusion_cargo.inventory_size = 80
+fusion_cargo.inventory_size = 80 + kr-cargo-wagon-bonus
 fusion_cargo.color = fuelcellcolor.fusion_color
 	
 local fusion_fluid = table.deepcopy(data.raw["fluid-wagon"]["fluid-wagon"])
@@ -89,7 +89,7 @@ antimatter_cargo.name = "antimatter-cargo-wagon"
 antimatter_cargo.minable.result = antimatter_cargo.name
 antimatter_cargo.max_health = 1400
 antimatter_cargo.weight = 4000
-antimatter_cargo.inventory_size = 120
+antimatter_cargo.inventory_size = 120 + kr-cargo-wagon-bonus
 antimatter_cargo.color = fuelcellcolor.antimatter_color
 	
 local antimatter_fluid = table.deepcopy(data.raw["fluid-wagon"]["fluid-wagon"])

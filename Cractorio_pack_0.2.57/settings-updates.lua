@@ -102,9 +102,9 @@ if mods['Krastorio2'] then
 	change_default('int-setting', 'kr-long-hands', 10)
 	change_default('bool-setting', 'kr-bonus-items', true)
 	change_default('bool-setting', 'kr-containers', false)
-	--change_default('bool-setting', 'kr-rebalance-radar', false)
-	change_default('bool-setting', 'kr-electric-poles-changes', false) -- fals as bob powr is used
-	--change_default('bool-setting', 'kr-finite-oil', false)
+	change_default('bool-setting', 'kr-rebalance-radar', false)
+	change_default('bool-setting', 'kr-electric-poles-changes', false)
+	change_default('bool-setting', 'kr-finite-oil', false)
 	--Background
 	change_default('bool-setting', 'kr-re-enable-menu-simulations', false)
 	change_default('string-setting', 'kr-main-menu-background', 'Krastorio Legacy')
@@ -120,7 +120,7 @@ end
 
 if mods['Krastorio2_Modules_Updated'] then
 	change_default('string-setting', 'k2-modules-efficiency-speed-bonus', 'none') --Way To OP
-	change_default('string-setting', 'k2-modules-productivity-bonus', 'low') -- low due to more slots than normal
+	change_default('string-setting', 'k2-modules-productivity-bonus', 'low')
 	change_default('string-setting', 'k2-modules-energy-processing-circuit-color', 'cyan')
 end
 
@@ -130,7 +130,7 @@ if mods['Krastorio2RFAC'] then
 end
 
 if mods['SchallEndgameEvolution'] then
-	change_default('int-setting', 'endgameevolution-alien-tier-max', 10)
+	change_default('int-setting', 'endgameevolution-alien-tier-max', 8)
 	change_default('string-setting', 'endgameevolution-difficulty', '2')
 end
 

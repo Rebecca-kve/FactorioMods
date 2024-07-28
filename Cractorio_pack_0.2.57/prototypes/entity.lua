@@ -39,17 +39,6 @@ if mods['Krastorio2'] then
 	end
 	
 	
---[[ mod got updated
-	if mods['wret-beacon-rebalance-mod'] then
-		data.raw["beacon"]["kr-singularity-beacon"].supply_area_distance = 9
-		data.raw["beacon"]["kr-singularity-beacon"].module_specification = {
-			module_slots = 20,
-			module_info_icon_shift = { 0, 0.5 },
-			module_info_multi_row_initial_height_modifier = -0.3,
-		}
-		data.raw["beacon"]["kr-singularity-beacon"].energy_usage = "35MW"
-	end
---]]
 	if mods['Krastorio2-more-locomotives'] then 
 		if settings.startup["fusion+antimatter-locomotiv-buff"].value == true then
 			data.raw["locomotive"]["kr-fusion-locomotive"].weight = 13000
@@ -58,7 +47,7 @@ if mods['Krastorio2'] then
 	end
 	
 	
---Why do k2 do this??? Option to restore grid
+--Aircraft Grid Option to restore grid
 
 if mods["Aircraft"] then 
 	if settings.startup["Buff-Aircraft-grid"].value == "Balanced" then
@@ -136,3 +125,13 @@ if mods["bobassembly"] then if settings.startup["bobmods-assembly-centrifuge"].v
 end end
 
 
+--[[ Mod was updated
+	if mods['wret-beacon-rebalance-mod'] then
+		data.raw["beacon"]["kr-singularity-beacon"].supply_area_distance = 9
+		data.raw["beacon"]["kr-singularity-beacon"].module_specification = {
+			module_slots = 20,
+			module_info_icon_shift = { 0, 0.5 },
+			module_info_multi_row_initial_height_modifier = -0.3,
+		}
+		data.raw["beacon"]["kr-singularity-beacon"].energy_usage = "35MW"
+	end --]]

@@ -1,3 +1,8 @@
+if not mods['Krastorio2-more-locomotives'] then
+	return
+end
+local cargo_wagon_bonus = krastorio.general.getSafeSettingValue("kr-cargo-wagon-bonus")
+
 local function extendItems(source, name, subgroup, order, itype, tint, stack_size)
     local item = table.deepcopy(data.raw[itype or "item"][source])
     data:extend({
@@ -51,7 +56,7 @@ nuclear_cargo.name = "nuclear-cargo-wagon"
 nuclear_cargo.minable.result = nuclear_cargo.name
 nuclear_cargo.max_health = 1000
 nuclear_cargo.weight = 2500
-nuclear_cargo.inventory_size = 60 + kr-cargo-wagon-bonus
+nuclear_cargo.inventory_size = 60 + cargo_wagon_bonus
 nuclear_cargo.color = fuelcellcolor.nuclear_color
 
 local nuclear_fluid = table.deepcopy(data.raw["fluid-wagon"]["fluid-wagon"])
@@ -59,7 +64,7 @@ nuclear_fluid.name = "nuclear-fluid-wagon"
 nuclear_fluid.minable.result = nuclear_fluid.name
 nuclear_fluid.max_health = 1000
 nuclear_fluid.weight = 2500
-nuclear_fluid.capacity = 35000
+nuclear_fluid.capacity = 50000
 nuclear_fluid.color = fuelcellcolor.nuclear_color
 
 data:extend({nuclear_cargo, nuclear_fluid})
@@ -73,7 +78,7 @@ fusion_cargo.name = "fusion-cargo-wagon"
 fusion_cargo.minable.result = fusion_cargo.name
 fusion_cargo.max_health = 1200
 fusion_cargo.weight = 3000
-fusion_cargo.inventory_size = 80 + kr-cargo-wagon-bonus
+fusion_cargo.inventory_size = 80 + cargo_wagon_bonus
 fusion_cargo.color = fuelcellcolor.fusion_color
 	
 local fusion_fluid = table.deepcopy(data.raw["fluid-wagon"]["fluid-wagon"])
@@ -81,7 +86,7 @@ fusion_fluid.name = "fusion-fluid-wagon"
 fusion_fluid.minable.result = fusion_fluid.name
 fusion_fluid.max_health = 1200
 fusion_fluid.weight = 3000
-fusion_fluid.capacity = 50000
+fusion_fluid.capacity = 75000
 fusion_fluid.color = fuelcellcolor.fusion_color
 
 local antimatter_cargo = table.deepcopy(data.raw["cargo-wagon"]["cargo-wagon"])
@@ -89,7 +94,7 @@ antimatter_cargo.name = "antimatter-cargo-wagon"
 antimatter_cargo.minable.result = antimatter_cargo.name
 antimatter_cargo.max_health = 1400
 antimatter_cargo.weight = 4000
-antimatter_cargo.inventory_size = 120 + kr-cargo-wagon-bonus
+antimatter_cargo.inventory_size = 120 + cargo_wagon_bonus
 antimatter_cargo.color = fuelcellcolor.antimatter_color
 	
 local antimatter_fluid = table.deepcopy(data.raw["fluid-wagon"]["fluid-wagon"])
@@ -97,7 +102,7 @@ antimatter_fluid.name = "antimatter-fluid-wagon"
 antimatter_fluid.minable.result = antimatter_fluid.name
 antimatter_fluid.max_health = 1400
 antimatter_fluid.weight = 4000
-antimatter_fluid.capacity = 75000
+antimatter_fluid.capacity = 100000
 antimatter_fluid.color = fuelcellcolor.antimatter_color
 	
 data:extend({fusion_cargo, fusion_fluid, antimatter_cargo, antimatter_fluid})
@@ -216,9 +221,6 @@ data:extend({
         result = "antimatter-fluid-wagon"
     },
 })
-	
-	
----Unlock tech
 	
 
 

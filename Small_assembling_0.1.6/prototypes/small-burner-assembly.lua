@@ -34,7 +34,7 @@ small_burner_assembling_machine.energy_source = {
   fuel_categories = {"chemical", data.raw["fuel-category"]["processed-chemical"] and "processed-chemical"},
   effectivity = 0.9 / consumption_multiplier,
   fuel_inventory_size = 1,
-  emissions_per_minute = 4 * consumption_multiplier,
+  emissions_per_minute = { pollution = 4 * consumption_multiplier },
   light_flicker =
   {
     minimum_light_size = 1,

@@ -55,7 +55,7 @@ small_assembling_machine_1.collision_box = {{-0.7, -0.7}, {0.7, 0.7}}
 small_assembling_machine_1.selection_box = {{-1, -1}, {1, 1}}
 small_assembling_machine_1.fast_replaceable_group = "small-assembling-machine"
 small_assembling_machine_1.next_upgrade = "small-assembling-machine-2"
-small_assembling_machine_1.energy_source.emissions_per_minute = 4 * consumption_multiplier
+small_assembling_machine_1.energy_source.emissions_per_minute = { pollution = 4 * consumption_multiplier }
 small_assembling_machine_1.energy_usage = tostring(75 * consumption_multiplier) .. "kW"
 
 small_assembling_machine_1.animation = {
@@ -118,7 +118,7 @@ small_assembling_machine_2.collision_box = {{-0.7, -0.7}, {0.7, 0.7}}
 small_assembling_machine_2.selection_box = {{-1, -1}, {1, 1}}
 small_assembling_machine_2.fast_replaceable_group = "small-assembling-machine"
 small_assembling_machine_2.next_upgrade = "small-assembling-machine-3"
-small_assembling_machine_2.energy_source.emissions_per_minute = 3 * consumption_multiplier
+small_assembling_machine_2.energy_source.emissions_per_minute = { pollution = 3 * consumption_multiplier }
 small_assembling_machine_2.energy_usage = tostring(150 * consumption_multiplier) .. "kW"
 
 small_assembling_machine_2.animation = {
@@ -179,7 +179,7 @@ small_assembling_machine_3.collision_box = {{-0.7, -0.7}, {0.7, 0.7}}
 small_assembling_machine_3.selection_box = {{-1, -1}, {1, 1}}
 small_assembling_machine_3.fast_replaceable_group = "small-assembling-machine"
 small_assembling_machine_3.next_upgrade = nil
-small_assembling_machine_3.energy_source.emissions_per_minute = 2  * consumption_multiplier
+small_assembling_machine_3.energy_source.emissions_per_minute = { pollution = 2  * consumption_multiplier }
 small_assembling_machine_3.energy_usage = tostring(375 * consumption_multiplier) .. "kW"
 small_assembling_machine_3.animation = {
 	layers = {
@@ -236,6 +236,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "small-assembling-machine-1",
+		icons = small_assembling_machine_1_item.icons,
 		normal = {
 			enabled = false,
 			energy_required = 0.5,
@@ -260,6 +261,7 @@ data:extend({
 	{
 		type = "recipe",
 		name = "small-assembling-machine-2",
+		icons = small_assembling_machine_2_item.icons,
 		normal = {
 			enabled = false,
 			energy_required = 0.5,
@@ -284,8 +286,8 @@ data:extend({
 	{
 		type = "recipe",
 		name = "small-assembling-machine-3",
- 
-		category = "crafting-with-fluid",
+		icons = small_assembling_machine_3_item.icons,
+		categories = { "crafting-with-fluid" },
 		normal = {
 			enabled = false,
 			energy_required = 0.5,

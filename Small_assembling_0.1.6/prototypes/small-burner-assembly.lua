@@ -54,7 +54,7 @@ small_burner_assembling_machine.energy_source = {
   }
 }
 
-small_burner_assembling_machine.animation = {
+small_burner_assembling_machine.graphics_set.animation = {
 layers = {
  {
   filename = "__aai-industry__/graphics/entity/burner-assembling-machine/burner-assembling-machine.png",

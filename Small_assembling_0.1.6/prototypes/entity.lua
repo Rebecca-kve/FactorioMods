@@ -58,53 +58,58 @@ small_assembling_machine_1.next_upgrade = "small-assembling-machine-2"
 small_assembling_machine_1.energy_source.emissions_per_minute = { pollution = 4 * consumption_multiplier }
 small_assembling_machine_1.energy_usage = tostring(75 * consumption_multiplier) .. "kW"
 
-small_assembling_machine_1.animation = {
-	layers = {
-        {
-			filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1.png",
-			priority="high",
-			width = 108,
-			height = 114,
-			frame_count = 32,
-			line_length = 8,
-			shift = util.by_pixel(0, 2 * 2 / 3),
-			scale = 2/3,
-			hr_version = {
-				filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1.png",
-				priority="high",
-				width = 214,
-				height = 226,
-				frame_count = 32,
-				line_length = 8,
-				shift = util.by_pixel(0, 2 * 2 / 3),
-				scale = 1/3,
-			}
-        },
-        {
-			filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow.png",
-			priority="high",
-			width = 95,
-			height = 83,
-			frame_count = 1,
-			line_length = 1,
-			repeat_count = 32,
-			draw_as_shadow = true,
-			shift = util.by_pixel(8.5 * 2 / 3, 5.5 * 2 / 3),
-			scale = 2/3,
-			hr_version = {
-				filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1-shadow.png",
-				priority="high",
-				width = 190,
-				height = 165,
-				frame_count = 1,
-				line_length = 1,
-				repeat_count = 32,
-				draw_as_shadow = true,
-				shift = util.by_pixel(8.5 * 2 / 3, 5 * 2 / 3),
-				scale = 1/3
-			}
-		}
-	}
+small_assembling_machine_1.graphics_set.animation = {	
+    layers =
+    {
+      util.sprite_load("__base__/graphics/entity/assembling-machine-1/assembling-machine-1-base",
+      {
+        priority = "high",
+        frame_count = 1,
+        repeat_count = 64,
+        scale = 0.33, -- Krympet fra 0.5 for å passe 2x2 flate
+      }),
+      util.sprite_load("__base__/graphics/entity/assembling-machine-1/assembling-machine-1-anim",
+      {
+        priority = "high",
+        frame_count = 64,
+        scale = 0.33, -- Krympet fra 0.5
+      }),
+      util.sprite_load("__base__/graphics/entity/assembling-machine-1/assembling-machine-1-shadow",
+      {
+        priority = "high",
+        frame_count = 1,
+        repeat_count = 64,
+        scale = 0.33, -- Krympet fra 0.5
+        draw_as_shadow = true,
+      }),
+    }
+}
+small_assembling_machine_1.water_reflection = {
+  	pictures =	{	
+    	filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-reflection.png",
+    	priority = "extra-high",
+    	width = 24,
+    	height = 24,
+    	shift = util.by_pixel(0, 15), -- Justert ned fra (5, 40) for 2x2 flate
+    	variation_count = 1,
+    	scale = 1.5 -- Redusert skala for å matche mindre maskin
+  	},
+  	rotate = false,
+  	orientation_to_variation = false
+}
+small_assembling_machine_1.working_visualisations =
+  {
+    {
+      animation = util.sprite_load("__base__/graphics/entity/assembling-machine-1/assembling-machine-1-status-light",
+      {
+        priority = "high",
+        repeat_count = 64,
+        draw_as_glow = true,
+        blend_mode = "additive",
+        scale = 0.33, -- Krympet fra 0.5 for å matche basen
+      }),
+    }
+  }
 }
 
 local small_assembling_machine_2 = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-1"])

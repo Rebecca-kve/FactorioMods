@@ -2,6 +2,7 @@ speed_multiplier = settings.startup["small-assembling-speed"].value
 consumption_multiplier = settings.startup["consumption_multiplier"].value
 ingredients_setting = settings.startup["small-assembling-ingredients"].value
 
+
 local small_assembling_machine_1_item = util.table.deepcopy(data.raw["item"]["assembling-machine-1"])
 small_assembling_machine_1_item.order = "[1]small-assembling-machine"
 small_assembling_machine_1_item.name = "small-assembling-machine-1"
@@ -47,7 +48,7 @@ data:extend({small_assembling_machine_1_item, small_assembling_machine_2_item, s
 local small_assembling_machine_1 = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-1"])
 small_assembling_machine_1.name = "small-assembling-machine-1"
 small_assembling_machine_1.minable.result = "small-assembling-machine-1"
-small_assembling_machine_1.ingredient_count = ingredients_setting
+small_assembling_machine_1.crafting_categories = {"small-crafting"}
 small_assembling_machine_1.crafting_speed = 0.5 * speed_multiplier
 --small_assembling_machine_1.module_specification = { module_slots = 2}
 --small_assembling_machine_1.allowed_effects = {"consumption", "speed", "productivity", "pollution"}
@@ -80,6 +81,7 @@ small_assembling_machine_1.graphics_set.animation = {
         frame_count = 1,
         repeat_count = 64,
         scale = 0.33, -- Krympet fra 0.5
+		shift = {-0.5, 0},
         draw_as_shadow = true,
       }),
     }
@@ -110,15 +112,23 @@ small_assembling_machine_1.working_visualisations =
       }),
     }
   }
-}
+
 
 local small_assembling_machine_2 = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-1"])
 small_assembling_machine_2.name = "small-assembling-machine-2"
 small_assembling_machine_2.minable.result = "small-assembling-machine-2"
-small_assembling_machine_2.ingredient_count = ingredients_setting
+small_assembling_machine_2.crafting_categories = {"small-crafting"}
 small_assembling_machine_2.crafting_speed = 0.75 * speed_multiplier
 small_assembling_machine_2.module_specification = { module_slots = 2}
+small_assembling_machine_2.module_slots = 2
 small_assembling_machine_2.allowed_effects = {"consumption", "speed", "productivity", "pollution"}
+small_assembling_machine_2.icons_positioning = {
+    {
+        inventory_index = defines.inventory.crafter_modules,
+		shift = {0, 0.5},
+        scale = 0.33
+    }
+}
 small_assembling_machine_2.collision_box = {{-0.7, -0.7}, {0.7, 0.7}}
 small_assembling_machine_2.selection_box = {{-1, -1}, {1, 1}}
 small_assembling_machine_2.fast_replaceable_group = "small-assembling-machine"
@@ -126,112 +136,114 @@ small_assembling_machine_2.next_upgrade = "small-assembling-machine-3"
 small_assembling_machine_2.energy_source.emissions_per_minute = { pollution = 3 * consumption_multiplier }
 small_assembling_machine_2.energy_usage = tostring(150 * consumption_multiplier) .. "kW"
 
-small_assembling_machine_2.animation = {
-	layers = {
+small_assembling_machine_2.graphics_set =
+  {
+    animation =
+    {
+      layers =
+      {
+        util.sprite_load("__base__/graphics/entity/assembling-machine-2/assembling-machine-2-base",
         {
-			filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2.png",
-			priority = "high",
-			width = 108,
-			height = 110,
-			frame_count = 32,
-			line_length = 8,
-			shift = util.by_pixel(0, 4 * 2 / 3),
-			scale = 2/3,
-			hr_version = {
-				filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2.png",
-				priority = "high",
-				width = 214,
-				height = 218,
-				frame_count = 32,
-				line_length = 8,
-				shift = util.by_pixel(0, 4 * 2 / 3),
-				scale = 1/3,
-			}
-        },
+          priority = "high",
+          repeat_count = 64,
+          scale = 0.33,
+        }),
+        util.sprite_load("__base__/graphics/entity/assembling-machine-2/assembling-machine-2-anim",
         {
-			filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-shadow.png",
-			priority = "high",
-			width = 98,
-			height = 82,
-			frame_count = 32,
-			line_length = 8,
-			draw_as_shadow = true,
-			shift = util.by_pixel(12 * 2 / 3, 5 * 2 / 3),
-			scale = 2/3,
-			hr_version = {
-				filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-shadow.png",
-				priority = "high",
-				width = 196,
-				height = 163,
-				frame_count = 32,
-				line_length = 8,
-				draw_as_shadow = true,
-				shift = util.by_pixel(12 * 2 / 3, 4.75 * 2 / 3),
-				scale = 1/3
-			}
-		}
-	}
-}
+          priority = "high",
+          frame_count = 64,
+          scale = 0.33,
+        }),
+        util.sprite_load("__base__/graphics/entity/assembling-machine-2/assembling-machine-2-shadow",
+        {
+          priority = "high",
+          repeat_count = 64,
+          scale = 0.33,
+		  shift = {-0.5, 0},
+          draw_as_shadow = true,
+        }),
+      }
+    },
+    working_visualisations =
+    {
+      {
+        animation = util.sprite_load("__base__/graphics/entity/assembling-machine-2/assembling-machine-2-status-light",
+        {
+          priority = "high",
+          repeat_count = 64,
+          draw_as_glow = true,
+          blend_mode = "additive",
+          scale = 0.33,
+        }),
+      }
+    }
+  }
 
 local small_assembling_machine_3 = util.table.deepcopy(data.raw["assembling-machine"]["assembling-machine-1"])
 small_assembling_machine_3.name = "small-assembling-machine-3"
 small_assembling_machine_3.minable.result = "small-assembling-machine-3"
-small_assembling_machine_3.ingredient_count = ingredients_setting
+small_assembling_machine_3.crafting_categories = {"small-crafting"}
 small_assembling_machine_3.crafting_speed = 1.25 * speed_multiplier
 small_assembling_machine_3.module_specification = { module_slots = 4}
+small_assembling_machine_3.module_slots = 4
 small_assembling_machine_3.allowed_effects = {"consumption", "speed", "productivity", "pollution"}
+
+small_assembling_machine_3.icons_positioning = {
+    {
+        inventory_index = defines.inventory.crafter_modules,
+        shift = {0, 0},
+        scale = 0.33
+    }
+}
 small_assembling_machine_3.collision_box = {{-0.7, -0.7}, {0.7, 0.7}}
 small_assembling_machine_3.selection_box = {{-1, -1}, {1, 1}}
 small_assembling_machine_3.fast_replaceable_group = "small-assembling-machine"
 small_assembling_machine_3.next_upgrade = nil
 small_assembling_machine_3.energy_source.emissions_per_minute = { pollution = 2  * consumption_multiplier }
 small_assembling_machine_3.energy_usage = tostring(375 * consumption_multiplier) .. "kW"
-small_assembling_machine_3.animation = {
-	layers = {
+small_assembling_machine_3.graphics_set =
+  {
+    animation_progress = 0.5,
+    animation =
+    {
+      layers =
+      {
+        util.sprite_load("__base__/graphics/entity/assembling-machine-3/assembling-machine-3-base",
         {
-			filename = "__base__/graphics/entity/assembling-machine-3/assembling-machine-3.png",
-			priority = "high",
-			width = 108,
-			height = 119,
-			frame_count = 32,
-			line_length = 8,
-			shift = util.by_pixel(0 * 2 / 3, -0.5 * 2 / 3),
-			scale = 2/3,
-			hr_version = {
-				filename = "__base__/graphics/entity/assembling-machine-3/hr-assembling-machine-3.png",
-				priority = "high",
-				width = 214,
-				height = 237,
-				frame_count = 32,
-				line_length = 8,
-				shift = util.by_pixel(0 * 2 / 3, -0.75 * 2 / 3),
-				scale = 1/3,
-			}
-        },
+          priority = "high",
+          repeat_count = 64,
+          scale = 0.33,
+        }),
+        util.sprite_load("__base__/graphics/entity/assembling-machine-3/assembling-machine-3-anim",
         {
-			filename = "__base__/graphics/entity/assembling-machine-3/assembling-machine-3-shadow.png",
-			priority = "high",
-			width = 130,
-			height = 82,
-			frame_count = 32,
-			line_length = 8,
-			draw_as_shadow = true,
-			shift = util.by_pixel(28 * 2 / 3, 4 * 2 / 3),
-			scale = 2/3,
-			hr_version = {
-				filename = "__base__/graphics/entity/assembling-machine-3/hr-assembling-machine-3-shadow.png",
-				priority = "high",
-				width = 260,
-				height = 162,
-				frame_count = 32,
-				line_length = 8,
-				draw_as_shadow = true,
-				shift = util.by_pixel(28 * 2 / 3, 4 * 2 / 3),
-				scale = 1/3
-			}
-		}
-	}
-}
+          priority = "high",
+          frame_count = 64,
+          scale = 0.33,
+        }),
+        util.sprite_load("__base__/graphics/entity/assembling-machine-3/assembling-machine-3-shadow",
+        {
+          priority = "high",
+          frame_count = 64,
+          scale = 0.33,
+		  shift = {-0.5, 0},
+          draw_as_shadow = true,
+        }),
+      }
+    },
+    working_visualisations =
+    {
+      {
+        animation = util.sprite_load("__base__/graphics/entity/assembling-machine-3/assembling-machine-3-status-light",
+        {
+          priority = "high",
+          repeat_count = 64,
+          draw_as_glow = true,
+          blend_mode = "additive",
+          scale = 0.33,
+        }),
+      }
+    }
+  }
 
 data:extend({small_assembling_machine_1, small_assembling_machine_2, small_assembling_machine_3})
 

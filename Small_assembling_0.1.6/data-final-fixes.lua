@@ -52,3 +52,5 @@ data:extend({
         name = category_name
     }
 })
+
+data.raw["assembling-machine"]["small-assembling-machine-1"].ingredient_count = ingredients_setting

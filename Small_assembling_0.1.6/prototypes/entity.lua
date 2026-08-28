@@ -49,6 +49,7 @@ local small_assembling_machine_1 = util.table.deepcopy(data.raw["assembling-mach
 small_assembling_machine_1.name = "small-assembling-machine-1"
 small_assembling_machine_1.minable.result = "small-assembling-machine-1"
 small_assembling_machine_1.crafting_categories = {"small-crafting"}
+--small_assembling_machine_1.ingredient_count = ingredients_setting
 small_assembling_machine_1.crafting_speed = 0.5 * speed_multiplier
 --small_assembling_machine_1.module_specification = { module_slots = 2}
 --small_assembling_machine_1.allowed_effects = {"consumption", "speed", "productivity", "pollution"}

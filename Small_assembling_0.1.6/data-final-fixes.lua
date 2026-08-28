@@ -9,14 +9,11 @@ for _, category in pairs(assembler.crafting_categories or {}) do
     assembler_categories[category] = true
 end
 
+--add category to recipes assemblig can craft that is under ingredient limit
 for _, recipe in pairs(data.raw.recipe) do
-    -- Exactly the requested number of ingredient entries
     if recipe.ingredients and #recipe.ingredients <= ingredients_setting then
 
-        -- Missing categories means "crafting"
         local categories = recipe.categories or {"crafting"}
-
-        -- Does AM1 support ANY of this recipe's categories?
         local can_assemble = false
 
         for _, category in pairs(categories) do
@@ -52,5 +49,3 @@ data:extend({
         name = category_name
     }
 })
-
-data.raw["assembling-machine"]["small-assembling-machine-1"].ingredient_count = ingredients_setting

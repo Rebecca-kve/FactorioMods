@@ -251,81 +251,53 @@ data:extend({small_assembling_machine_1, small_assembling_machine_2, small_assem
 
 
 data:extend({
-	{
-		type = "recipe",
-		name = "small-assembling-machine-1",
-		icons = small_assembling_machine_1_item.icons,
-		normal = {
-			enabled = false,
-			energy_required = 0.5,
-			ingredients = {
-				{"iron-gear-wheel", 5},
-				{"copper-cable", 10},
-				{"iron-plate", 9},
-			},
-			results= { {type="item", name="small-assembling-machine-1", amount=1} }
-		},
-		expensive = {
-			enabled = false,
-			energy_required = 0.5,
-			ingredients = {
-				{"iron-gear-wheel", 10},
-				{"copper-cable", 20},
-				{"iron-plate", 18},
-			},
-			results= { {type="item", name="small-assembling-machine-1", amount=1} }
-		}
+    {
+        type = "recipe",
+        name = "small-assembling-machine-1",
+        icons = small_assembling_machine_1_item.icons,
+        enabled = false,
+        energy_required = 0.5,
+        ingredients = {
+            {type = "item", name = "iron-gear-wheel", amount = 5},
+            {type = "item", name = "copper-cable", amount = 10},
+            {type = "item", name = "iron-plate", amount = 9},
+        },
+        results = {
+            {type = "item", name = "small-assembling-machine-1", amount = 1}
+        }
     },
-	{
-		type = "recipe",
-		name = "small-assembling-machine-2",
-		icons = small_assembling_machine_2_item.icons,
-		normal = {
-			enabled = false,
-			energy_required = 0.5,
-			ingredients = {
-				{"steel-plate", 2},
-				{"electronic-circuit", 3},
-				{"small-assembling-machine-1", 1},
-			},
-			results= { {type="item", name="small-assembling-machine-2", amount=1} }
-		},
-		expensive = {
-			enabled = false,
-			ingredients = {
-				{"steel-plate", 4},
-				{"electronic-circuit", 6},
-				{"small-assembling-machine-1", 1},
-			},
-			results= { {type="item", name="small-assembling-machine-2", amount=1} }
-		}
-		
+
+    {
+        type = "recipe",
+        name = "small-assembling-machine-2",
+        icons = small_assembling_machine_2_item.icons,
+        enabled = false,
+        energy_required = 0.5,
+        ingredients = {
+            {type = "item", name = "steel-plate", amount = 2},
+            {type = "item", name = "electronic-circuit", amount = 3},
+            {type = "item", name = "small-assembling-machine-1", amount = 1},
+        },
+        results = {
+            {type = "item", name = "small-assembling-machine-2", amount = 1}
+        }
     },
-	{
-		type = "recipe",
-		name = "small-assembling-machine-3",
-		icons = small_assembling_machine_3_item.icons,
-		categories = { "crafting-with-fluid" },
-		normal = {
-			enabled = false,
-			energy_required = 0.5,
-			ingredients = {
-				{type = "fluid", name = "lubricant", amount = 100},
-				{"advanced-circuit", 10},
-				{"small-assembling-machine-2", 1},
-			},
-			results= { {type="item", name="small-assembling-machine-3", amount=1} }
-		},
-		expensive = {
-			enabled = false,
-			energy_required = 0.5,
-			ingredients = {
-				{type = "fluid", name = "lubricant", amount = 200},
-				{"advanced-circuit", 20},
-				{"small-assembling-machine-2", 1},
-			},
-			results= { {type="item", name="small-assembling-machine-3", amount=1} }
-		}
+
+    {
+        type = "recipe",
+        name = "small-assembling-machine-3",
+        icons = small_assembling_machine_3_item.icons,
+        categories = { "crafting-with-fluid" },
+        enabled = false,
+        energy_required = 0.5,
+        ingredients = {
+            {type = "fluid", name = "lubricant", amount = 100},
+            {type = "item", name = "advanced-circuit", amount = 10},
+            {type = "item", name = "small-assembling-machine-2", amount = 1},
+        },
+        results = {
+            {type = "item", name = "small-assembling-machine-3", amount = 1}
+        }
     },
 })
 

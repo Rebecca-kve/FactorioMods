@@ -109,7 +109,6 @@ data:extend({
 		type = "recipe",
 		name = "small-burner-assembling-machine",
 		icons = small_burner_assembling_machine_item.icons,
-		normal = {
 			enabled = true,
 			energy_required = 0.5,
 			ingredients = {
@@ -118,47 +117,28 @@ data:extend({
 				{type="item", name="motor", amount=1}
 			},
 			results= { {type="item", name="small-burner-assembling-machine", amount=1} }
-		},
-		expensive = {
-			enabled = true,
-			energy_required = 0.5,
-			ingredients = {
-				{type="item", name="iron-plate", amount=10},
-				{type="item", name="stone-brick", amount=10},
-				{type="item", name="motor", amount=2},
-			},
-			results= { {type="item", name="small-burner-assembling-machine", amount=1} }
-		}
+		
 	},
-	{
-		type = "recipe",
-		name = "small-assembling-machine-1",
-		icons = {
-			{ icon = "__Small_assembling__/prototypes/blank.png", icon_size = 64 }, {
-				icon = "__base__/graphics/icons/assembling-machine-1.png",
-				icon_size = 64,
-				scale = 0.4,
-			},
-		},
-		normal = {
-			enabled = false,
-			energy_required = 0.5,
-			ingredients = {
-				{"iron-gear-wheel", 5},
-				{"copper-cable", 10},
-				{"small-burner-assembling-machine", 1},
-			},
-			results= { {type="item", name="small-assembling-machine-1", amount=1} }
-		},
-		expensive = {
-			enabled = false,
-			energy_required = 0.5,
-			ingredients = {
-				{"iron-gear-wheel", 10},
-				{"copper-cable", 20},
-				{"small-burner-assembling-machine", 1},
-			},
-			results= { {type="item", name="small-assembling-machine-1", amount=1} }
-		}
+
+    {
+        type = "recipe",
+        name = "small-assembling-machine-1",
+		    icons = {
+			    { icon = "__Small_assembling__/prototypes/blank.png", icon_size = 64 }, {
+				    icon = "__base__/graphics/icons/assembling-machine-1.png",
+				    icon_size = 64,
+				    scale = 0.4,
+			    },
+		    },
+        enabled = false,
+        energy_required = 0.5,
+        ingredients = {
+            {type = "item", name = "iron-gear-wheel", amount = 5},
+            {type = "item", name = "copper-cable", amount = 10},
+            {type = "item", name = "small-burner-assembling-machine", amount = 1},
+        },
+        results = {
+            {type = "item", name = "small-assembling-machine-1", amount = 1}
+        }
     },
 })
